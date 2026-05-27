@@ -1,0 +1,6 @@
+{
+  "name": "Mehr als du denkst.",
+  "description": "Eine moderne Kampagne der katholischen Kirche über Glaube, Zweifel, Gemeinschaft, soziales Engagement und Sinnsuche im Alltag.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
