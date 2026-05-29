@@ -23,55 +23,55 @@ export default function GlaubeImAlltag() {
   const scenarios: EverydayScenario[] = [
     {
       id: 'crisis',
-      tabLabel: 'Wenn du nicht weiterweißt',
-      title: 'Halt in Sturmzeiten finden',
-      lead: 'Wenn Angst, Trauer oder akute Lebenskrisen dir den Boden unter den Füßen wegreißen.',
+      tabLabel: 'In Zeiten der Orientierungslosigkeit',
+      title: 'Halt in den Stürmen des Lebens finden',
+      lead: 'Wenn Sorgen, Stress oder Lebenskrisen dich überfordern und dir den gefühlten Boden unter den Füßen wegreißen.',
       details: [
-        'Zuhören ohne Vorurteile: Unsere Seelsorger stehen rund um die Uhr beratend und im absoluten Vertrauen an deiner Seite.',
-        'Ein Ventil für die Seele: In Kirchen darfst du weinen, im Schweigen verharren, eine Kerze anzünden oder deine Sorgen aufschreiben.',
-        'Erinnerung, dass Leid nicht das Ende ist: Der christliche Glaube schenkt uns die Zusage, dass Leid und Tod niemals das letzte Wort behalten.'
+        'Verschwiegenes Vertrauen: Unsere Seelsorger unterliegen der gesetzlichen Schweigepflicht. Hier findest du einen geschützten Raum, um Sorgen und Ängste ohne Vorurteile im Vertrauen zu teilen.',
+        'Orte des Innehaltens: Die geöffneten Kirchengebäude bieten dir Raum, um zur Ruhe zu kommen, im Stillen nachzudenken oder eine Kerze als Zeichen der Hoffnung zu entzünden.',
+        'Getragen durch Zuversicht: Der Glaube schenkt die innere Resilienz und das Vertrauen, dass auch schwere Phasen durchgestanden werden können und neues Licht spürbar wird.'
       ],
       icon: <ShieldAlert className="h-5 w-5" />,
-      encouragement: 'Du musst nicht stark sein, um dazuzugehören. Auch Zweifel und Tränen haben bei uns eine Heimat.'
+      encouragement: 'Es bedarf keiner Perfektion, keiner besonderen Stärke, um Teil unserer Gemeinschaft zu sein. Auch Zweifel und Tränen haben hier ihren berechtigten Platz.'
     },
     {
       id: 'hope',
-      tabLabel: 'Wenn du Hoffnung brauchst',
-      title: 'Du bist bedingungslos kostbar',
-      lead: 'Wenn du dich wertlos, erschöpft, ausgebrannt oder isoliert von der Welt fühlst.',
+      tabLabel: 'Auf der Suche nach Annahme',
+      title: 'Du bist bedingungslos wertvoll',
+      lead: 'Wenn Gefühle von Wertlosigkeit, Erschöpfung oder Ausgrenzung die eigene Lebensfreude trüben.',
       details: [
-        'Kein Mensch ist ein Unfall: Du bist gewollt, geschaffen aus Liebe und mit unverwechselbarer Würde gesegnet – völlig unabhängig von deiner Leistung.',
-        'Nie ganz verloren: Die Zusage Gottes lautet: Ich bin mit dir, auch in den tiefsten Tälern, wo kein Mensch dich mehr hört.',
-        'Ein Neuanfang ist immer möglich: Fehler, Sackgassen und Brüche definieren dich nicht abschließend. Vergebung gibt dir Kraft für neue Wege.'
+        'Unantastbare Würde: Jeder Mensch besitzt einen unschätzbaren, gottgegebenen Wert – völlig unabhängig von gesellschaftlichem Status, Noten oder beruflicher Leistung.',
+        'Zusage des Beistands: Die Zusage des Glaubens lautet, auch in Zeiten tiefster Selbstzweifel oder des Unverständnisses durch Mitmenschen niemals gänzlich allein zu sein.',
+        'Kultur des Neuanfangs: Eigene Fehler oder Misserfolge definieren nicht deine Identität. Die Botschaft von Versöhnung und Vergebung ermöglicht es, jeden Tag unbelastet neu zu beginnen.'
       ],
       icon: <Sparkles className="h-5 w-5" />,
-      encouragement: 'Glaube sagt: Du bist gedacht, geliebt und gesehen – genau so, wie du jetzt gerade bist.'
+      encouragement: 'Der christliche Glaube bezeugt: Du bist gewollt, geliebt und gesehen – genau so, wie du im gegenwärtigen Moment bist.'
     },
     {
       id: 'morality',
-      tabLabel: 'Wenn du Werte suchst',
-      title: 'Ein innerer Kompass im Alltag',
-      lead: 'Wenn die Welt immer komplexer wird und du nach verlässlichen Maßstäben und Orientierung suchst.',
+      tabLabel: 'Nach Werten streben',
+      title: 'Ein verlässlicher Kompass für das Handeln',
+      lead: 'Wenn eine komplexe Welt nach tragfähigen Leitplanken und Orientierung verlangt.',
       details: [
-        'Nächstenliebe als Standard: Andere Menschen so zu sehen und zu behandeln, wie man selbst geschätzt werden möchte.',
-        'Vergebung als Befreiung: Groll und Verbitterung vergiften das eigene Leben. Vergebung öffnet Türen zu echter, innerer Freiheit.',
-        'Soziale Verantwortung: Aktiv gegen Ungerechtigkeit, Armut und Diskriminierung aufstehen und die Erde für kommende Generationen bewahren.'
+        'Gelebte Nächstenliebe: Die goldene Regel lehrt uns, Mitmenschen mit genau der Empathie, Offenheit und Wertschätzung zu begegnen, die wir uns selbst wünschen.',
+        'Befreiung durch Vergebung: Groll und ungelöste Konflikte belasten die eigene Seele. Die christliche Bereitschaft zu verzeihen befreit den Geist und stiftet inneren Frieden.',
+        'Verantwortung für die Schöpfung: Aktiv für soziale Gerechtigkeit einzustehen, Schwächere vor Ausgrenzung zu schützen und unsere Umwelt bewusst zu bewahren.'
       ],
       icon: <Heart className="h-5 w-5" />,
-      encouragement: 'Werte sind keine Fesseln, sondern nützliche Leitplanken, die uns ein friedliches Zusammenleben ermöglichen.'
+      encouragement: 'Werte sind keine einschränkenden Verbote, sondern sinnstiftende Orientierungshilfen für ein gerechtes und gelingendes Zusammenleben.'
     },
     {
       id: 'belonging',
-      tabLabel: 'Wenn du Gemeinschaft suchst',
-      title: 'Ein Ort des reinen Dazugehörens',
-      lead: 'Wenn du echte Begegnungen suchst statt nur digitaler Likes und oberflächlicher Kontakte.',
+      tabLabel: 'Gemeinschaft erfahren',
+      title: 'Ein Ort authentischer Begegnung',
+      lead: 'Wenn du echten, persönlichen Austausch suchst, abseits von digitaler Selbstdarstellung und flüchtigen Bekanntschaften.',
       details: [
-        'Kein gesellschaftlicher Leistungsdruck: Bei uns musst du dich nicht vermarkten oder verstellen. Du zählst einfach als Mensch.',
-        'Gemeinsam stark: In Jung und Alt, lokalen Gruppen und engagierten Kreisen teilen wir Lebensgeschichten, Sorgen und Freude.',
-        'Ein offenes Zuhause: Wo auch immer du hingehst – in fast jeder Nachbarschaft findest du eine Kirchengemeinde mit offenen Türen.'
+        'Wertvoll ohne Maske: In unseren Kreisen entfällt die Notwendigkeit ständiger Leistungsweise oder perfekter Inszenierung. Du zählst ganz schlicht als Mensch.',
+        'Gelebter Zusammenhalt: In den unterschiedlichen Gruppen und Initiativen teilen wir authentische Erlebnisse, lachen gemeinsam und unterstützen uns gegenseitig.',
+        'Eine weltweite Heimat: Finde fast überall eine offene Kirchengemeinde vor, die dir Türen öffnet und die Möglichkeit bietet, Anschluss zu finden.'
       ],
       icon: <HeartHandshake className="h-5 w-5" />,
-      encouragement: 'Komm einfach dazu, wie du bist. Neugier und Skepsis sind uns gleichermaßen willkommen.'
+      encouragement: 'Komm einfach hinzu. Neugier und theologische Zweifel sind uns gleichermaßen willkommen.'
     }
   ];
 
@@ -83,13 +83,13 @@ export default function GlaubeImAlltag() {
       {/* Intro section */}
       <section className="text-center max-w-3xl mx-auto">
         <span className="text-xs font-mono uppercase bg-church-gold/20 text-church-navy px-3 py-1 rounded-full font-semibold">
-          Lebendiger Glaube
+          Spiritualität im Alltag
         </span>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-church-navy mt-3">
           Glaube im Alltag erfahren
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Viele Menschen verbinden Glaube ausschließlich mit festen Traditionen oder feierlichen Bräuchen. Aber Glaube entfaltet seine eigentliche Relevanz im realen, oft chaotischen Alltag – als innere Kraftquelle, leiser Ratgeber und tröstender Rückhalt.
+          Viele assoziieren Glauben primär mit historischen Traditionen oder starren Riten. Doch gelebter Glaube entfaltet seine eigentliche Kraft im Alltag – als verlässliche Kraftquelle, als moralischer Kompass und als starker Rückhalt in Phasen der Unsicherheit.
         </p>
       </section>
 
@@ -98,8 +98,8 @@ export default function GlaubeImAlltag() {
         {/* Navigation Column */}
         <div className="lg:col-span-4 bg-church-navy p-6 sm:p-8 flex flex-col justify-between">
           <div>
-            <h3 className="font-serif text-lg font-bold text-white mb-2">Wie geht es dir heute?</h3>
-            <p className="text-xs text-gray-300 mb-6">Wähle deinen aktuellen Gemütszustand:</p>
+            <h3 className="font-serif text-lg font-bold text-white mb-2">Wie erlebst du den Tag?</h3>
+            <p className="text-xs text-gray-300 mb-6 font-light">Wähle einen Bereich, der dich heute bewegt:</p>
             
             <div className="space-y-2">
               {scenarios.map((sc) => {
@@ -181,33 +181,33 @@ export default function GlaubeImAlltag() {
             Gelebte Kultur im Alltag
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-church-navy">
-            Wie Glaube im Alltag konkret aussieht
+            Wie Glaube im Alltag konkret gelebt wird
           </h2>
           <p className="text-gray-650 text-xs sm:text-sm max-w-xl mx-auto font-light leading-relaxed">
-            Es braucht keine katholischen Prachtbauten, um Glauben Raum zu geben. Im alltäglichen Leben drückt sich Spiritualität durch einfache, kraftspendende Gewohnheiten aus:
+            Es bedarf keiner monumentalen Kathedralen, um Spiritualität erfahrbar zu machen. Im alltäglichen Leben zeigt sich der persönliche Glaube oft in kleinen, kraftgebenden Gewohnheiten:
           </p>
         </div>
-
+ 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto pt-4">
           <div className="bg-church-bg p-6 rounded-3xl border border-church-border space-y-3 shadow-xs">
             <span className="text-2xl block">🙏</span>
             <h4 className="font-serif font-bold text-church-navy text-sm sm:text-base">Momente des Innehaltens</h4>
             <p className="text-gray-500 text-xs leading-relaxed">
-              Morgens beim Kaffeetrinken oder abends beim bewussten Rückblick auf den Tag: Kleine Momente der Ruhe helfen dabei, das Leben bewusster wahrzunehmen und wertzuschätzen.
+              Ob am Morgen, in einer kurzen Pause oder am Abend: Bewusst innezuhalten, den Tag reflektierend Revue passieren zu lassen und dankbar zu sein, schafft inneren Abstand zur Hektik.
             </p>
           </div>
           <div className="bg-church-bg p-6 rounded-3xl border border-church-border space-y-3 shadow-xs">
             <span className="text-2xl block">💡</span>
-            <h4 className="font-serif font-bold text-church-navy text-sm sm:text-base">Der moralische Nordstern</h4>
+            <h4 className="font-serif font-bold text-church-navy text-sm sm:text-base">Wertschätzende Begegnung</h4>
             <p className="text-gray-500 text-xs leading-relaxed">
-              In täglichen Interaktionen mit Arbeitskollegen oder der Familie besinnen sich Millionen von Menschen auf christliche Grundwerte wie Fairness, Aufrichtigkeit, Nächstenliebe und Zuverlässigkeit.
+              Im Umgang mit der Familie, Kollegen oder Mitmenschen bewusst Werte der Fairness, des Respekts und der gegenseitigen Anerkennung zur Richtlinie des eigenen Handelns machen.
             </p>
           </div>
           <div className="bg-church-bg p-6 rounded-3xl border border-church-border space-y-3 shadow-xs">
             <span className="text-2xl block">🌱</span>
-            <h4 className="font-serif font-bold text-church-navy text-sm sm:text-base">Sichtbare Nächstenliebe</h4>
+            <h4 className="font-serif font-bold text-church-navy text-sm sm:text-base">Tätige Solidarität</h4>
             <p className="text-gray-500 text-xs leading-relaxed">
-              Schlichte, alltägliche Gesten – Hilfsbedürftigen Unterstützung geben, ein aufmerksames Wort oder das Mitwirken in lokalen sozialen Kreisen – sind der ehrlichste Beweis christlichen Engagements.
+              Sich uneigennützig für Schwächere einsetzen, im Alltag Unterstützung anbieten oder anderen mit Aufmerksamkeit begegnen – das ist gelebte Mitmenschlichkeit.
             </p>
           </div>
         </div>

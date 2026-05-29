@@ -35,35 +35,35 @@ export default function Mitmachen() {
       title: "Zeit zum Durchatmen",
       subtitle: "Ich suche Stille, Zuflucht & Kraft",
       icon: "🌿",
-      text: "In einer lauten, getriebenen Welt voller Erwartungen ist das wichtigste Geschenk manchmal die Stille. Die Kirche ist kein Ort des ständigen Redens oder Konsumierens, sondern ein geschützter Raum für deine Seele.",
-      tip: "Besuche eine der offenen Kirchen in Mönchengladbach (wie das Vitus-Münster auf dem Abteiberg). Setze dich für 10 Minuten ganz ohne Smartphone in eine hintere Bank und lasse einfach das beruhigende Spiel der bunten Glasfenster auf dich wirken.",
+      text: "In einer reizüberfluteten Gesellschaft, geprägt von Leistungsdruck und ständiger Erreichbarkeit, ist bewusste Stille eine kostbare Ressource. Kirchengebäude sind historische Schutzräume, die ein bedingungsloses Verweilen jenseits aller Erwartungen ermöglichen.",
+      tip: "Besuche eine geöffnete Kirche in deiner Nähe (beispielsweise die Münsterbasilika St. Vitus auf dem Abteiberg). Verweile einige Minuten in der Stille, lege digitale Geräte beiseite und lass die Architektur und das Lichtspiel auf dich wirken.",
       quote: "„Kommt alle zu mir, die ihr mühselig und beladen seid; ich will euch erquicken.“",
       source: "Matthäus-Evangelium 11,28"
     },
     zweifel: {
-      title: "Zweifel als Motor der Wahrheit",
+      title: "Zweifel gehören dazu",
       subtitle: "Ich habe Fragen & ehrliche Zweifel",
       icon: "💬",
-      text: "Ein starrer Glaube, der keine bohrenden Fragen zulässt, wird irgendwann spröde. Deine Skepsis, dein Schmerz und deine ehrlichen Zweifel sind hier keine Sünde, sondern das Fundament einer aufrichtigen Sinnsuche.",
-      tip: "Schreibe dein persönlich größtes 'Warum?' auf. Lies unsere Antworten im Bereich 'Kritische Fragen' oder nimm unverbindlich an einer offenen Diskussionsrunde der Jungen Kirche Mönchengladbach teil.",
+      text: "Glaube erhebt nicht den Anspruch unfehlbarer Gewissheit. Kritische Fragen, Skepsis und theologische Zweifel sind legitime und bereichernde Bestandteile einer reflektierten Auseinandersetzung mit großen Lebensfragen.",
+      tip: "Formuliere deine persönlich drängendste Sinnfrage. Unsere Dialogseite zu kritischen Fragen bietet hierzu fundierte Reflexionen, und unsere Ansprechpartner stehen bereit für ergebnisoffene Gespräche.",
       quote: "„Ich glaube; hilf meinem Unglauben!“",
       source: "Markus-Evangelium 9,24"
     },
     helfen: {
-      title: "Nächstenliebe hat feste Schuhe",
-      subtitle: "Ich möchte anpacken & anderen helfen",
+      title: "Anpacken und helfen",
+      subtitle: "Ich möchte mich sozial engagieren",
       icon: "❤️",
-      text: "Der Glaube entfaltet seine größte Dynamik, wenn er die Ärmel hochkrempelt. Gott begegnet uns nicht nur im stillen Gebet, sondern ganz konkret im Gesicht des Mitmenschen, der unsere Solidarität benötigt.",
-      tip: "Engagiere dich bei der lokalen Caritas Rheydt, der Suppenküche oder hilf bei Spendensammlungen für Benachteiligte in deiner Nachbarschaft. Schon minimal investierte Zeit verändert Leben nachhaltig.",
+      text: "Spiritualität konkretisiert sich im caritativen Handeln. Es gilt, gesellschaftliche Mitverantwortung auf Augenhöhe zu übernehmen und Mitmenschen, die sich in Notlagen befinden, respektvoll beizustehen.",
+      tip: "Unterstütze lokale Netzwerke der Caritas, eine regionale Lebensmittelausgabe oder engagiere dich in ehrenamtlichen Nachbarschaftshilfen vor Ort.",
       quote: "„Was ihr für einen meiner geringsten Brüder getan habt, das habt ihr für mich getan.“",
       source: "Matthäus-Evangelium 25,40"
     },
     gemeinschaft: {
-      title: "Gemeinsam klingt es heller",
+      title: "Zusammen ist man weniger allein",
       subtitle: "Ich suche Begegnung, Musik & Austausch",
       icon: "🙌",
-      text: "Niemand ist dazu erschaffen, seinen Lebensweg völlig isoliert zu gehen. Die Gemeinschaft trägt uns in Zeiten der Orientierungslosigkeit und feiert mit uns die lichten Momente — auf Augenhöhe, modern und herzlich.",
-      tip: "Schau einfach mal beim Ökumenischen Begegnungscafé vorbei oder besuche unverbindlich die Probe unseres Jugend-Gospelschors 'Hope & Glory'. Musik und nette Gespräche verbinden sofort.",
+      text: "Kein Mensch ist für die Isolation geschaffen. Gelebte Gemeinschaft fängt persönliche Belastungen auf, teilt Lebensfreude und stiftet verlässliche Netze gegenseitigen Vertrauens.",
+      tip: "Nimm Kontakt zu Chören, Musikprojekten oder den zahlreichen Jugendverbänden wie der KJG oder den Pfadfindern auf. Das gemeinsame Tun stiftet unmittelbare Verbindung.",
       quote: "„Wo zwei oder drei in meinem Namen versammelt sind, da bin ich mitten unter ihnen.“",
       source: "Matthäus-Evangelium 18,20"
     }
@@ -139,27 +139,27 @@ export default function Mitmachen() {
   const categories = [
     {
       title: 'Jugendgruppen',
-      desc: 'Pfadfinder, Messdiener, Gruppenstunden und unvergessliche Freizeiten. Hier gestalten junge Menschen Gemeinschaft im eigenen Stil.',
+      desc: 'Pfadfinderstämme, Messdienergemeinschaften und KJG-Kreise bieten Räume der Selbstbestimmung, in denen junge Menschen Verantwortung für sich und das Gemeinwesen erproben können.',
       icon: <Users2 className="h-5 w-5 text-indigo-600" />
     },
     {
       title: 'Gottesdienste besuchen',
-      desc: 'Niemand fragt nach einem Taufschein oder deinem Vorwissen am Kirchenaingang. Komm einfach vorbei, hör zu, zünd eine Kerze an und geh, wann du willst.',
+      desc: 'Kirchen stehen allen Menschen uneingeschränkt offen. Du bist herzlich eingeladen, Gottesdienste unvoreingenommen mitzufeiern, Orgelklängen zu lauschen oder eine Kerze zu entzünden.',
       icon: <BookOpen className="h-5 w-5 text-emerald-600" />
     },
     {
       title: 'Soziale Aktionen',
-      desc: 'Vesperkirchen, Kleidersammlungen und Hilfsfahrten – in hunderten ehrenamtlichen Initiativen kannst du aktiv tatkräftig mit anpacken.',
+      desc: 'Lebensmittelverteilung, Unterstützung für in Not geratene Familien oder ökologische Projekte vor Ort: In zahlreichen Initiativen kannst du dich tatkräftig einbringen.',
       icon: <HeartHandshake className="h-5 w-5 text-amber-600" />
     },
     {
       title: 'Klang & Musik',
-      desc: 'Von klassischen Kirchenchören bis zu modernen Jugendbands, Gospelchören oder musikalisch untermalten Andachten bei Kerzenschein.',
+      desc: 'Vom klassischen Kantatenchor über Orgelkonzerte bis hin zu modernen Jugendbands und meditativen Taizé-Gesängen verbindet die Musik über Generationen hinweg.',
       icon: <Music4 className="h-5 w-5 text-sky-600" />
     },
     {
       title: 'Offene Gespräche',
-      desc: 'Lebenskrisen, Sorgen oder tiefe Gotteszweifel. Seelsorgerinnen und Seelsorger haben ein offenes Ohr für dich und unterliegen strengster Verschwiegenheit.',
+      desc: 'In existentiellen Lebenskrisen, Partnerschaftskonflikten oder seelischen Belastungen stehen dir unsere Seelsorger unter Schweigepflicht als vertrauensvolle Partner zur Seite.',
       icon: <MessageSquareHeart className="h-5 w-5 text-pink-600" />
     }
   ];

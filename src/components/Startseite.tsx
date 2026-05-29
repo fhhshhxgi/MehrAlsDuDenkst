@@ -50,7 +50,7 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
           muted 
           playsInline 
           className="w-full h-full object-cover object-center opacity-65 scale-105 transition-all duration-1000"
-          poster="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1920&q=80"
+          poster="https://images.unsplash.com/photo-1512852964607-8cca57a833e1?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         >
           <source src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-people-holding-candles-44181-large.mp4" type="video/mp4" />
           <source src="https://assets.mixkit.co/videos/preview/mixkit-slow-motion-of-light-passing-through-stained-glass-44186-large.mp4" type="video/mp4" />
@@ -96,14 +96,14 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
             transition={{ duration: 1.2, delay: 0.35 }}
             className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 max-w-2xl mx-auto font-light leading-relaxed px-4"
           >
-            Kraft spüren, Halt finden, füreinander da sein. Lass dich überraschen und entdecke den wahren Reichtum von Glaube und lebendiger Gemeinschaft völlig neu.
+            Kraft tanken, Orientierung finden und füreinander einstehen. Entdecke, wie gelebte Gemeinschaft, Solidarität und persönlicher Glaube modernen Halt im Alltag stiften.
           </motion.p>
         </div>
 
         {/* 4 Majestic Visual Dimensions Cards Grid */}
         <div className="w-full max-w-6xl px-4 pt-4 sm:pt-6">
           <div className="max-w-xs mx-auto text-center mb-3 sm:mb-4">
-            <span className="font-mono text-[9px] text-gray-400 uppercase tracking-widest font-extrabold block">Unsere 4 Grund-Dimensionen</span>
+            <span className="font-mono text-[9px] text-gray-400 uppercase tracking-widest font-extrabold block">Unsere tragenden Säulen</span>
             <div className="w-12 h-0.5 bg-church-gold/50 mx-auto mt-1" />
           </div>
 
@@ -126,7 +126,7 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
                 <span className="text-church-gold text-[8px] font-mono uppercase tracking-widest font-bold">Dimension 01</span>
                 <h3 className="text-white font-serif text-xs sm:text-sm font-bold block leading-tight mt-0.5">Sinn & Glaube</h3>
                 <p className="text-gray-300 text-[10px] font-light mt-0.5 line-clamp-1 transition-all text-white hidden sm:block font-sans">
-                  Innere Reife, Kraftquellen & tiefer Schutz im Alltag.
+                  Sinn finden, Kraft schöpfen und echten inneren Halt erfahren.
                 </p>
               </div>
             </motion.div>
@@ -148,7 +148,7 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
                 <span className="text-church-gold text-[8px] font-mono uppercase tracking-widest font-bold">Dimension 02</span>
                 <h3 className="text-white font-serif text-xs sm:text-sm font-bold block leading-tight mt-0.5">Gemeinschaft</h3>
                 <p className="text-gray-300 text-[10px] font-light mt-0.5 line-clamp-1 transition-all text-white hidden sm:block font-sans">
-                  Singen, leben, füreinander da sein. Willkommen heißen.
+                  Gemeinsamkeit erfahren, Lebensfreude teilen und Beistand spüren.
                 </p>
               </div>
             </motion.div>
@@ -170,7 +170,7 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
                 <span className="text-church-gold text-[8px] font-mono uppercase tracking-widest font-bold">Dimension 03</span>
                 <h3 className="text-white font-serif text-xs sm:text-sm font-bold block leading-tight mt-0.5">Nächstenliebe</h3>
                 <p className="text-gray-300 text-[10px] font-light mt-0.5 line-clamp-1 transition-all text-white hidden sm:block font-sans">
-                  Caritas vor Ort & stützende Hilfe ohne Barrieren.
+                  Unbürokratische Solidarität und tatkräftige Hilfe vor Ort.
                 </p>
               </div>
             </motion.div>
@@ -192,7 +192,7 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
                 <span className="text-church-gold text-[8px] font-mono uppercase tracking-widest font-bold">Dimension 04</span>
                 <h3 className="text-white font-serif text-xs sm:text-sm font-bold block leading-tight mt-0.5">Offene Ruhepole</h3>
                 <p className="text-gray-300 text-[10px] font-light mt-0.5 line-clamp-1 transition-all text-white hidden sm:block font-sans">
-                  Über 22.000 Ruhepole und Oasen der wertvollen Stille.
+                  Räume des Innehaltens und architektonische Oasen der Zuflucht.
                 </p>
               </div>
             </motion.div>

@@ -29,33 +29,33 @@ export default function KritischeFragen() {
   const faqs: FAQItem[] = [
     {
       id: 'modern',
-      question: 'Ist die Kirche heute überhaupt noch modern?',
-      answer: 'Manche Rituale, Gewänder und formalen Hierarchien wirken zweifelsohne wie aus der Zeit gefallen. Gleichzeitig erleben wir an der Basis aber ein enormes Maß an zeitgemäßer Dynamik.',
-      subContent: 'Viele Gemeinden arbeiten heute digital, nutzen Messenger-Gruppen für spontane Nachbarschaftshilfe, organisieren Jugendbands mit modernem Electrosound und weichen alte Rollenbilder auf. Kirche wandelt sich – oft schmerzhaft langsam, aber sie tut es durch die Menschen, die mittun.'
+      question: 'Ist die Kirche in der heutigen Zeit noch zeitgemäß?',
+      answer: 'Einige Traditionen, Gewänder und hierarchische Strukturen wirken in einer modernen Gesellschaft anachronistisch. Gleichzeitig entfaltet sich an der Basis und in vielen Gemeinden eine beachtliche zukunftsorientierte Dynamik.',
+      subContent: 'Zahlreiche Initiativen nutzen zeitgemäße Kommunikationswege für direkte Nachbarschaftshilfe, etablieren innovative musikalische und kulturelle Formate und hinterfragen überkommene Geschlechterrollen. Kirchlicher Wandel vollzieht sich oft in kleinen, beharrlichen Schritten – getragen von Menschen, die proaktiv reformieren.'
     },
     {
       id: 'kritik',
-      question: 'Warum gibt es so massive Kritik an der katholischen Kirche?',
-      answer: 'Es gibt berechtigte, tiefe Kritik, zum Beispiel an verkrusteten Machtstrukturen, der Ausgrenzung bestimmter Lebensmodelle und vor allem an den schrecklichen Missbrauchsfällen und deren mangelhafter Aufarbeitung.',
-      subContent: 'Diese Verfehlungen dürfen weder schöngeredet noch ignoriert werden. Sie rütteln an der Glaubwürdigkeit unseres Auftrags. Viele Gläubige und Priester kämpfen deshalb heute verbissen für Transparenz, lückenlose juristische Aufklärung der Verbrechen und strukturelle Gewaltprävention, damit Kirche wieder zu einem sicheren Ort wird.'
+      question: 'Wie begegnet die Kirche der massiven Kritik an ihren Strukturen?',
+      answer: 'Die Kritik an Machtkonzentrationen, dem Umgang mit diversen Lebensentwürfen und insbesondere an der unzureichenden Aufarbeitung sexuellen Missbrauchs ist schmerzhaft berechtigt.',
+      subContent: 'Diese Verfehlungen dürfen weder relativiert noch beschönigt werden, da sie das Fundament des Vertrauens zutiefst beschädigt haben. Daher fordern und forcieren engagierte Gläubige und externe Instanzen eine lückenlose, unabhängige Aufklärung sowie institutionelle Reformen, um Schutzkonzepte konsequent zu verankern.'
     },
     {
       id: 'warum-bleiben',
-      question: 'Warum treten Menschen bei all dieser Kritik nicht einfach alle aus?',
-      answer: 'Trotz all des Ärgers über Fehler von Amtsträgern bleiben viele Menschen bewusst Teil der Gemeinschaft. Sie trennen die spirituelle Botschaft Jesu von den Fehlern der Kirchenleitung.',
-      subContent: 'Sie bleiben, weil sie ihren persönlichen Glauben leben wollen, weil sie den seelsorglichen Beistand in Lebenskrisen schätzen, weil sie die gigantischen sozialen Hilfswerke unterstützen wollen oder weil die Sakramente und traditionellen Feste ein unverzichtbarer Teil ihrer familiären Identität sind.'
+      question: 'Warum bleiben Menschen angesichts dieser Missstände weiterhin in der Kirche?',
+      answer: 'Viele Menschen differenzieren bewusst zwischen der zeitlosen christlichen Botschaft Jesu Christi und den moralischen Verfehlungen der institutionellen Leitungsebene.',
+      subContent: 'Sie schätzen das konkrete Engagement der Gemeinden vor Ort, engagieren sich in caritativen Netzwerken oder finden in existentiellen Krisen geistlichen Beistand, Hoffnung und seelischen Halt innerhalb einer solidarischen Glaubensgemeinschaft.'
     },
     {
       id: 'blind-glauben',
-      question: 'Muss man alles absolut blind glauben, um überhaupt dazuzugehören?',
-      answer: 'Nein, keineswegs. Der christliche Glaube ist kein starres Dogmenpaket, bei dem man den Verstand am Kircheneingang abgibt.',
-      subContent: 'Der Glaube ist ein Weg. Auf diesem Weg sind Zweifel, offene Fragen und Kritik nicht nur erlaubt, sondern überaus erwünscht. Viele große Heilige der Kirchengeschichte hatten schwerste Glaubenskrisen. Wer fragt und zweifelt, zeigt, dass ihm das Thema wichtig ist.'
+      question: 'Erfordert die Zugehörigkeit zur Kirche einen blinden Gehorsam?',
+      answer: 'Keineswegs. Der christliche Glaube fordert nicht dazu auf, den eigenen Verstand oder kritisches Denken am Kircheneingang abzugeben.',
+      subContent: 'Zweifel, theologische Fragen und konstruktive Kritik sind wesentliche Treiber einer lebendigen Spiritualität. Selbst große Mystiker und Theologen der Geschichte durchlebten tiefgreifende Glaubenskrisen. Eine ernsthafte Auseinandersetzung zeugt von der Relevanz, die das Thema für den Einzelnen besitzt.'
     },
     {
       id: 'privatsache',
-      question: 'Ist der persönliche Glaube nicht viel eher reine Privatsache?',
-      answer: 'Der Glaube ist intim und zutiefst persönlich – aber er bleibt selten unbemerkt im Stillen. Er hat immer auch eine soziale Drehung.',
-      subContent: 'Wer aus dem Glauben Kraft zieht, wendet sich dem Nächsten zu. Glaube baut Pflegeheime, gründet Kitas, hilft Obdachlosen, schützt Geflüchtete und engagiert sich für globale Gerechtigkeit. Eine rein private Religiösität würde die Schwachen in unserer kühlen Gesellschaft im Stich lassen.'
+      question: 'Ist der persönliche Glaube nicht eine reine Privatsache?',
+      answer: 'Der persönliche Glaube gründet in innerer Überzeugung, drängt jedoch von Natur aus auch in den sozialen Raum und stiftet gesellschaftlichen Mehrwert.',
+      subContent: 'Christliche Werte motivieren Menschen zu tätiger Nächstenliebe. Ohne diesen Antrieb gäbe es keine flächendeckenden sozialen Einrichtungen wie Kitas, Kältehilfen oder Beratungsangebote. Ein Glaube, der sich an den Bedürfnissen der Mitmenschen orientiert, übernimmt Verantwortung für das Gemeinwohl.'
     }
   ];
 
@@ -71,10 +71,10 @@ export default function KritischeFragen() {
           Ehrlicher Dialog
         </span>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-church-navy mt-3">
-          Deine Fragen sind erlaubt.
+          Deine Fragen haben einen berechtigten Platz.
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Viele Menschen haben fundamentale Fragen oder scharfe Kritik an der katholischen Kirche. Eine ehrliche und mutige Auseinandersetzung gehört zum Kern unseres Selbstverständnisses. Diese Kampagne will nichts schönreden, sondern offenlegen, warum wir trotzdem voller Hoffnung weitergehen.
+          Viele Menschen bewegen kritische Fragen und verständlicher Unmut über Missstände in der Kirche. Uns ist ein ehrlicher, transparenter Dialog auf Augenhöhe ein echtes Anliegen. Wir wollen Probleme nicht verschweigen, sondern uns ihnen aktiv stellen und gemeinsam den Weg nach vorn gestalten.
         </p>
       </section>
 

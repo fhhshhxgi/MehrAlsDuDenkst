@@ -4,14 +4,15 @@ import path from 'path';
 import fs from 'fs';
 import {defineConfig} from 'vite';
 
-// Custom plugin to serve plakat.png from root and copy to dist on build
+// Custom plugin to serve plakat.png and instapost.png from root and copy to dist on build
 const servePlakatPlugin = () => ({
   name: 'serve-plakat-plugin',
   configureServer(server) {
     server.middlewares.use((req, res, next) => {
       const pathname = req.url ? req.url.split('?')[0] : '';
-      if (pathname === '/plakat.png') {
-        const filePath = path.resolve(process.cwd(), 'plakat.png');
+      if (pathname === '/plakat.png' || pathname === '/instapost.png' || pathname === '/faltflyer.png') {
+        const filename = pathname.substring(1); // 'plakat.png' or 'instapost.png' or 'faltflyer.png'
+        const filePath = path.resolve(process.cwd(), filename);
         if (fs.existsSync(filePath)) {
           res.setHeader('Content-Type', 'image/png');
           res.statusCode = 200;
@@ -24,15 +25,17 @@ const servePlakatPlugin = () => ({
     });
   },
   closeBundle() {
-    const srcPath = path.resolve(process.cwd(), 'plakat.png');
-    const destPath = path.resolve(process.cwd(), 'dist/plakat.png');
-    if (fs.existsSync(srcPath)) {
-      if (!fs.existsSync(path.dirname(destPath))) {
-        fs.mkdirSync(path.dirname(destPath), { recursive: true });
+    ['plakat.png', 'instapost.png', 'faltflyer.png'].forEach(filename => {
+      const srcPath = path.resolve(process.cwd(), filename);
+      const destPath = path.resolve(process.cwd(), `dist/${filename}`);
+      if (fs.existsSync(srcPath)) {
+        if (!fs.existsSync(path.dirname(destPath))) {
+          fs.mkdirSync(path.dirname(destPath), { recursive: true });
+        }
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`Copied ${filename} to dist/`);
       }
-      fs.copyFileSync(srcPath, destPath);
-      console.log('Copied plakat.png to dist/');
-    }
+    });
   }
 });
 

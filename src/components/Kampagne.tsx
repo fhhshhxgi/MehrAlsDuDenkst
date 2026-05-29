@@ -26,6 +26,32 @@ export default function Kampagne() {
   const [flyerSide, setFlyerSide] = useState<'vorder' | 'rueck'>('vorder');
   const [downloadSuccess, setDownloadSuccess] = useState<string | null>(null);
   const [isCopied, setIsCopied] = useState<boolean>(false);
+  const [hasInstaPost, setHasInstaPost] = useState<boolean>(false);
+  const [hasFaltFlyer, setHasFaltFlyer] = useState<boolean>(false);
+
+  React.useEffect(() => {
+    // Check if instapost.png exists in root via fetch (which falls back to the backend serve plugin)
+    fetch('/instapost.png', { method: 'HEAD' })
+      .then((res) => {
+        if (res.ok) {
+          setHasInstaPost(true);
+        } else {
+          setHasInstaPost(false);
+        }
+      })
+      .catch(() => setHasInstaPost(false));
+
+    // Check if faltflyer.png exists in root
+    fetch('/faltflyer.png', { method: 'HEAD' })
+      .then((res) => {
+        if (res.ok) {
+          setHasFaltFlyer(true);
+        } else {
+          setHasFaltFlyer(false);
+        }
+      })
+      .catch(() => setHasFaltFlyer(false));
+  }, []);
 
   // Simulated download triggers helper
   const triggerDownload = (title: string) => {
@@ -33,6 +59,26 @@ export default function Kampagne() {
     setTimeout(() => {
       setDownloadSuccess(null);
     }, 3000);
+  };
+
+  const handleDownloadInstapost = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '/instapost.png';
+    downloadLink.download = 'instapost.png';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+    triggerDownload('instapost.png');
+  };
+
+  const handleDownloadFaltflyer = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = '/faltflyer.png';
+    downloadLink.download = 'faltflyer.png';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+    triggerDownload('faltflyer.png');
   };
 
   const handleCopyCaption = () => {
@@ -137,20 +183,30 @@ export default function Kampagne() {
 
                 {/* Main photography with quote card inside */}
                 <div className="aspect-square bg-church-navy relative flex items-center justify-center p-6 overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=600&q=80" 
-                    alt="Warmes Kerzenlicht" 
-                    className="absolute inset-0 w-full h-full object-cover opacity-25"
-                  />
-                  <div className="absolute inset-0 bg-church-navy/60" />
-                  
-                  <div className="relative z-10 text-center space-y-3">
-                    <span className="font-serif text-lg font-bold text-white block italic leading-snug px-3">
-                      „Manchmal beginnt Glaube nicht mit einer Antwort, sondern mit einer Frage.“
-                    </span>
-                    <div className="h-[1px] bg-church-gold w-12 mx-auto" />
-                    <span className="font-mono text-[9px] uppercase text-church-gold tracking-widest font-extrabold block">#MehrAlsDuDenkst</span>
-                  </div>
+                  {hasInstaPost ? (
+                    <img 
+                      src="/instapost.png" 
+                      alt="Original Kampagnenkachel" 
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]"
+                    />
+                  ) : (
+                    <>
+                      <img 
+                        src="https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=600&q=80" 
+                        alt="Warmes Kerzenlicht" 
+                        className="absolute inset-0 w-full h-full object-cover opacity-25"
+                      />
+                      <div className="absolute inset-0 bg-church-navy/60" />
+                      
+                      <div className="relative z-10 text-center space-y-3">
+                        <span className="font-serif text-lg font-bold text-white block italic leading-snug px-3">
+                          „Manchmal beginnt Glaube nicht mit einer Antwort, sondern mit einer Frage.“
+                        </span>
+                        <div className="h-[1px] bg-church-gold w-12 mx-auto" />
+                        <span className="font-mono text-[9px] uppercase text-church-gold tracking-widest font-extrabold block">#MehrAlsDuDenkst</span>
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 {/* Social icons bottom */}
@@ -191,20 +247,51 @@ export default function Kampagne() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-2">
-                <button
+                <motion.button
                   id="copy-instagram-caption-btn"
                   onClick={handleCopyCaption}
-                  className="px-5 py-3 bg-church-navy hover:bg-church-navy/95 text-white font-bold rounded-[16px] text-xs sm:text-sm flex items-center justify-center space-x-2 shrink-0 cursor-pointer"
+                  whileTap={{ scale: 0.96 }}
+                  className={`px-5 py-3 font-bold rounded-[16px] text-xs sm:text-sm flex items-center justify-center space-x-2 shrink-0 cursor-pointer transition-all duration-300 min-w-[200px] shadow-sm select-none border-none ${
+                    isCopied 
+                      ? 'bg-emerald-600 text-white shadow-emerald-600/20' 
+                      : 'bg-church-navy hover:bg-church-navy/95 text-white active:scale-95'
+                  }`}
                 >
-                  <span>{isCopied ? 'Kopiert! ✓' : 'Text & Hashtags kopieren'}</span>
-                </button>
+                  <AnimatePresence mode="wait">
+                    {isCopied ? (
+                      <motion.span
+                        key="copied"
+                        initial={{ opacity: 0, y: 10, scale: 0.9 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: -10, scale: 0.9 }}
+                        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                        className="flex items-center gap-1.5"
+                      >
+                        <CheckCircle2 className="h-4 w-4 text-church-gold animate-bounce" />
+                        <span>Erfolgreich kopiert!</span>
+                      </motion.span>
+                    ) : (
+                      <motion.span
+                        key="copy"
+                        initial={{ opacity: 0, y: -10, scale: 0.9 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 10, scale: 0.9 }}
+                        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                        className="flex items-center gap-1.5"
+                      >
+                        <Sparkle className="h-3.5 w-3.5 text-church-gold/85" />
+                        <span>Text & Hashtags kopieren</span>
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
+                </motion.button>
                 <button
                   id="download-instagram-asset-btn"
-                  onClick={() => triggerDownload('SocialMedia_Kachel_Post.png')}
+                  onClick={handleDownloadInstapost}
                   className="px-5 py-3 bg-white hover:bg-gray-50 text-church-navy border border-church-border font-semibold rounded-[16px] text-xs sm:text-sm flex items-center justify-center space-x-2 cursor-pointer"
                 >
                   <Download className="h-4 w-4" />
-                  <span>Grafik (.PNG) herunterladen</span>
+                  <span>{hasInstaPost ? 'Original Kachel (.PNG) herunterladen' : 'Grafik (.PNG) herunterladen'}</span>
                 </button>
               </div>
             </div>
@@ -218,10 +305,41 @@ export default function Kampagne() {
                 Kampagnenmedien • Falt-Flyer & Handzettel
               </span>
               <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed">
-                Der offizielle Handzettel entspricht exakt dem Kampagnenplakat „Mehr als du denkst.“. Sie können die hochauflösende Vektorgrafik direkt herunterladen und als hochwertigen Flyer oder Handzettel drucken.
+                Der offizielle Falt-Wickelfalzflyer zum Anzeigen und Herunterladen für Ihren Gemeinde-Infostand oder Briefkastenaktionen.
               </p>
             </div>
-            <OfficialCampaignPoster onDownloadClick={triggerDownload} />
+
+            {hasFaltFlyer ? (
+              <div className="space-y-6">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-[#FAF7F0] p-6 rounded-3xl border border-church-border text-left">
+                  <div>
+                    <h3 className="font-serif text-2xl font-bold text-church-navy">Falt-Wickelfalzflyer</h3>
+                    <p className="text-gray-600 text-xs sm:text-sm mt-1">
+                      Offizielle Druckvorlage im DIN-Lang Format.
+                    </p>
+                  </div>
+                  <button
+                    onClick={handleDownloadFaltflyer}
+                    className="px-6 py-3 bg-church-navy hover:bg-church-navy/95 text-white hover:text-church-gold font-bold rounded-2xl text-xs sm:text-sm flex items-center justify-center space-x-2 shrink-0 transition-all cursor-pointer shadow-md shadow-church-navy/10 border-none group"
+                  >
+                    <Download className="h-4.5 w-4.5 text-church-gold group-hover:scale-110 transition-transform" />
+                    <span>Flyer (.PNG) herunterladen</span>
+                  </button>
+                </div>
+
+                <div className="w-full bg-[#FAF7F0] rounded-[32px] overflow-hidden shadow-2xl border border-church-border p-3 max-w-[850px] mx-auto relative">
+                  <div className="absolute inset-0 bg-[#fbf9f5] opacity-10 pointer-events-none mix-blend-multiply" />
+                  <img 
+                    src="/faltflyer.png" 
+                    alt="Original Faltflyer" 
+                    referrerPolicy="no-referrer"
+                    className="w-full h-auto select-none pointer-events-auto rounded-[20px] transition-transform duration-300 hover:scale-[1.01]"
+                  />
+                </div>
+              </div>
+            ) : (
+              <OfficialCampaignPoster onDownloadClick={triggerDownload} />
+            )}
           </div>
         )}
       </section>

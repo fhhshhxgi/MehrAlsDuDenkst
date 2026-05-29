@@ -31,7 +31,7 @@ export default function OfficialCampaignPoster({ onDownloadClick }: OfficialCamp
             Kampagnenmotiv: „Mehr als du denkst.“
           </h3>
           <p className="text-gray-600 text-xs sm:text-sm mt-1">
-            Das hochgeladene Originalplakat aus Ihrer Kampagne.
+            Offizielles Motiv der Kampagne zum Anzeigen und Herunterladen.
           </p>
         </div>
         <button

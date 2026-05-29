@@ -27,62 +27,62 @@ export default function MachDenTest() {
   const questions: QuizQuestion[] = [
     {
       id: 1,
-      text: 'Was suchst du am ehesten im Leben?',
+      text: 'Wonach strebst du am ehesten in deinem Leben?',
       options: [
-        { text: 'Einen Ort, an dem Menschen echt zusammenkommen und sich unterstützen.', type: 'type1' },
-        { text: 'Antworten auf die großen, ungeklärten Fragen des Lebens.', type: 'type2' },
-        { text: 'Eine Chance, mich für Benachteiligte zu engagieren.', type: 'type3' },
-        { text: 'Eine Oase der Ruhe, um Abstand vom täglichen Stress zu gewinnen.', type: 'type4' }
+        { text: 'Nach Räumen authentischer Gemeinschaft, in denen sich Menschen auf Augenhöhe begegnen und gegenseitig stützen.', type: 'type1' },
+        { text: 'Nach intellektuellen und existenziellen Antworten auf die großen Sinnfragen des Seins.', type: 'type2' },
+        { text: 'Nach konkreten Gelegenheiten, mich tatkräftig für soziale Gerechtigkeit und benachteiligte Mitmenschen einzusetzen.', type: 'type3' },
+        { text: 'Nach einer Oase des Innehaltens und der Stille, um Abstand von der Hektik des Alltags zu gewinnen.', type: 'type4' }
       ]
     },
     {
       id: 2,
       text: 'Welche Atmosphäre spricht dich spontan am stärksten an?',
       options: [
-        { text: 'Musik, lebhafte Feste und gemütliches Reden mit anderen.', type: 'type1' },
-        { text: 'Ein intellektueller Dialog über Werte, Zweifel und Theologie.', type: 'type2' },
-        { text: 'Hände, die zupacken – etwa beim Kochen für Obdachlose.', type: 'type3' },
-        { text: 'Lichtstrahlen durch bunte Fenster in absoluter Ruhe.', type: 'type4' }
+        { text: 'Lebendiger Austausch, generationsübergreifende Feste und inspirierende Tischgemeinschaften.', type: 'type1' },
+        { text: 'Ein offener, reflektierter Dialog über theologische Fragen, Zweifel und Wertekompasse.', type: 'type2' },
+        { text: 'Praktizierte Solidarität – anpackende Hände bei sozialen Initiativen oder Hilfskampagnen.', type: 'type3' },
+        { text: 'Die erhabene Ästhetik und tiefe Stille eines kirchenmusikalisch erfüllten Sakralraums.', type: 'type4' }
       ]
     },
     {
       id: 3,
-      text: 'Welche Aussage in deinem Alltag passt am ehesten zu dir?',
+      text: 'Welche Lebensmaxime resoniert am ehesten mit deiner persönlichen Haltung?',
       options: [
-        { text: '„Gemeinsam sind wir stärker, Isolation macht einsam.“', type: 'type1' },
-        { text: '„Ich hinterfrage Dinge gerne, anstatt alles blind zu glauben.“', type: 'type2' },
-        { text: '„Mitleid nützt nichts, wenn man dem Hungernden kein Brot gibt.“', type: 'type3' },
-        { text: '„In der Stille finde ich die Kraft, die ich im Alltag brauche.“', type: 'type4' }
+        { text: '„Gemeinschaft stiftet Sinn – Isolation und bloße Selbstdarstellung verringern unsere Lebensqualität.“', type: 'type1' },
+        { text: '„Ein reflektierter Glaube verlangt nach ehrlicher Auseinandersetzung und klaren Fragen, nicht nach blindem Gehorsam.“', type: 'type2' },
+        { text: '„Tätige Nächstenliebe erweist sich in der Tat – Worte ohne solidarisches Handeln bleiben leer.“', type: 'type3' },
+        { text: '„In der bewussten Hinwendung zur Stille empfange ich die innere Resilienz und Kraft für den Alltag.“', type: 'type4' }
       ]
     },
     {
       id: 4,
       text: 'Wie betrachtest du das Thema Glaube oder Spiritualität?',
       options: [
-        { text: 'Als gemeinsamen Gesang, der Freude am Leben weckt.', type: 'type1' },
-        { text: 'Als eine lebenslange Reise voller Fragen und offener Zweifel.', type: 'type2' },
-        { text: 'Als tätige Nachbarschaftshilfe, die den Worten Taten folgen lässt.', type: 'type3' },
-        { text: 'Als wertvolle Momente der Meditation und Einkehr im Stillen.', type: 'type4' }
+        { text: 'Als verbindenden Klang einer Gemeinschaft, der Lebensfreude stiftet und Menschen zueinander führt.', type: 'type1' },
+        { text: 'Als eine lebenslange, dynamische Entdeckungsreise voller theologischer Fragen und wertvoller Zweifel.', type: 'type2' },
+        { text: 'Als praktische Übersetzung biblischer Werte in messbaren, gesellschaftlichen Beistand.', type: 'type3' },
+        { text: 'Als kontemplativen Rückzugsort der Meditation, des Gebets und der seelischen Regeneration.', type: 'type4' }
       ]
     },
     {
       id: 5,
-      text: 'Wenn du einen Raum betrittst, worauf fällt dein Fokus zuerst?',
+      text: 'Wenn du ein Kirchengebäude betrittst, worauf fällt dein Fokus zuerst?',
       options: [
-        { text: 'Auf die Gesichter der Menschen und deren Gesten der Einladung.', type: 'type1' },
-        { text: 'Auf Symbole, alte Schriften und kunstvolle Altarbotschaften.', type: 'type2' },
-        { text: 'Auf Aushänge für soziales Engagement oder Spendenaufrufe.', type: 'type3' },
-        { text: 'Auf die leeren Sitzbänke und die unaufgeregte Stille.', type: 'type4' }
+        { text: 'Auf die Gesichter der anwesenden Menschen und die Atmosphäre einladender Offenheit.', type: 'type1' },
+        { text: 'Auf theologische Bildmotive, Sakramente, historische Schriften oder kunstvolle Altarbotschaften.', type: 'type2' },
+        { text: 'Auf Informationsstände über caritative Projekte, Seelsorgeangebote und lokale Hilfswerke.', type: 'type3' },
+        { text: 'Auf die Weite des Raumes, das gedämpfte Licht und die meditative Stille der Kirchenbänke.', type: 'type4' }
       ]
     },
     {
       id: 6,
-      text: 'Welches Buch- oder Podcast-Thema fesselt dich am ehesten?',
+      text: 'Welche Thematik fesselt deine Aufmerksamkeit in Medien oder Diskursen am ehesten?',
       options: [
-        { text: '„Gemeinschaft im Wandel – Neue Netzwerke gegen Einsamkeit.“', type: 'type1' },
-        { text: '„Sinnsuche im 21. Jahrhundert: Warum Zweifel gesund sind.“', type: 'type2' },
-        { text: '„Die Macher: Wie soziales Engagement Gesellschaften repariert.“', type: 'type3' },
-        { text: '„Heilsame Stille – 10 Minuten Achtsamkeit für Gestresste.“', type: 'type4' }
+        { text: '„Gegen die Vereinsamung: Wie moderne Netzwerke sozialen Zusammenhalt neu stiften.“', type: 'type1' },
+        { text: '„Glaube und Vernunft: Warum theologische Zweifel Triebfedern geistigen Wachstums sind.“', type: 'type2' },
+        { text: '„Caritative Verantwortung: Wie praktizierte Solidarität das soziale Netz stabilisiert.“', type: 'type3' },
+        { text: '„Achtsamkeit und Kontemplation: Wege zu innerem Frieden in einer reizüberfluteten Welt.“', type: 'type4' }
       ]
     }
   ];
@@ -90,34 +90,34 @@ export default function MachDenTest() {
   const results: Record<'type1' | 'type2' | 'type3' | 'type4', QuizResult> = {
     type1: {
       id: 'type1',
-      title: 'Der Gemeinschaftsmensch 👥',
-      subtitle: 'Kirche als lebendiger Ort des Zusammenkommens',
-      description: 'Für dich steht das Zwischenmenschliche im Vordergrund des Lebens. Du ziehst Energie aus der Zugehörigkeit, suchst ehrliche Freundschaften und liebst es, gemeinsam mit anderen zu lachen und das Leben zu teilen.',
-      advice: 'In der katholischen Kirche könntest du vor allem in Jugendgruppen, bei fröhlichen Gemeindefesten, in modernen Chören oder durch die Mitgestaltung lokaler Initiativen wunderbare Heimatsmomente erleben. Schau einfach vorbei – du bist ohne Vorbedingungen willkommen!',
+      title: 'Gemeinschaft & Begegnung 👥',
+      subtitle: 'Die Kirche als lebendige Weggemeinschaft',
+      description: 'Für dich steht das relationale, zwischenmenschliche Fundament im Vordergrund. Du schöpfst Kraft aus echter Zugehörigkeit, schätzt den ehrlichen Austausch von Angesicht zu Angesicht und möchtest das Leben gemeinsam in einer verlässlichen Gemeinschaft auf Augenhöhe gestalten.',
+      advice: 'In den regionalen Gemeinden und Projekten unserer Kirche findest du zahlreiche Gelegenheiten für echte Begegnung ganz ohne Leistungsdruck. Ob in generationenübergreifenden Chören, lebendigen Initiativen oder offenen Foren – du bist herzlich eingeladen, dich vollkommen ungezwungen einzubringen und Anschluss zu finden.',
       bgGradient: 'from-orange-50 to-orange-100 border-orange-200'
     },
     type2: {
       id: 'type2',
-      title: 'Der Sinnsucher 🧭',
-      subtitle: 'Kirche als Raum für die großen Lebensfragen',
-      description: 'Du gibst dich selten mit einfachen, vorgekauten Antworten zufrieden. Du hinterfragst Gegebenheiten, hast gesunde Zweifel und suchst nach echter philosophischer Tiefe sowie intellektuellem Ringen um Sinn und Werte.',
-      advice: 'Niemand zwingt dich bei uns, deine Skepsis abzulegen. Im Gegenteil: Diskutiert in Themenabenden, sprecht mit Seelsorgern im offenen Visier oder bringt euch in theologische Kreise ein. Deine Zweifel sind ein Motor für echtes Wachstum!',
+      title: 'Sinnsuche & Reflexion 🧭',
+      subtitle: 'Die Kirche als Raum für existenzielle Orientierung',
+      description: 'Du gibst dich nicht mit oberflächlichen Antworten zufrieden. Ein kritischer Verstand, theologische Neugier und das ehrliche Ringen um Werte und Existenzfragen zeichnen dich aus. Zweifel verstehst du als berechtigten Motor geistigen und persönlichen Wachstums.',
+      advice: 'Dein reflektierter Glaubensweg hat in der Kirche einen festen, anerkannten Platz. Nutze theologische Diskussionsabende, den dialogischen Austausch mit Seelsorgern oder engagiere dich in Bildungsforen. Hier musst du deine Fragen nicht ablegen – sie sind der Schlüssel zur Vertiefung.',
       bgGradient: 'from-purple-50 to-purple-100 border-purple-200'
     },
     type3: {
       id: 'type3',
-      title: 'Der Helfer 🤝',
-      subtitle: 'Kirche als engagierte Kraft des Wandels',
-      description: 'Für dich muss ein guter Glaube vor allem eines tun: Anpacken. Schöne Worte und Sonntagsgebete nützen nichts, wenn montags weggeschaut wird. Deine treibende Motivation ist soziale Gerechtigkeit und Hilfe für Benachteiligte.',
-      advice: 'Das soziale Getriebe der Kirche steht dir sperrangelweit offen! Ob Caritas, Obdachlosenküche, Jugendverbandsaktionen oder weltweite Partnerschaften – hier hast du unendlich viele Gelegenheiten, das Schicksal anderer Menschen konkret positiv zu verändern.',
+      title: 'Tätige Solidarität 🤝',
+      subtitle: 'Die Kirche als caritative Kraft gesellschaftlichen Wandels',
+      description: 'Für dich entscheidet sich der Wert einer Weltanschauung an ihrem praktischen Nutzen für die Schwächsten. Worten müssen Taten folgen. Dein ethischer Kompass treibt dich an, soziale Ungerechtigkeiten zu bekämpfen und unmittelbare, unbürokratische Hilfe zu leisten.',
+      advice: 'Das weitreichende caritative Netzwerk unserer Kirche – allen voran das Wohlfahrtswerk der Caritas – bietet dir unzählige Plattformen für dein Engagement. Vom ehrenamtlichen Beistand in der Kältehilfe über ökologische Nachhaltigkeitsprojekte bis hin zur interkulturellen Solidaritätsarbeit kannst du aktiv die Gesellschaft mitgestalten.',
       bgGradient: 'from-emerald-50 to-emerald-100 border-emerald-200'
     },
     type4: {
       id: 'type4',
-      title: 'Der Ruhe-Sucher 🕯️',
-      subtitle: 'Kirche als schutzgebender Kraftort der Stille',
-      description: 'Der Alltag kann überwältigend laut werden. Du suchst nach Inseln der Auszeit, nach Momenten des puren Innehaltens und nach einer spirituellen Tiefe, die ohne viel Lärm und Aufregung für dich da ist.',
-      advice: 'Unsere Kirchengebäude stehen tagsüber als Schutzräume offen. Setze dich einfach hinein, genieße den kühlen Raum, atme tief durch und entzünde – wenn du magst – eine stille Kerze. Entdecke spirituelle Andachten, Meditationen der Ruhe oder Taizé-Gebete.',
+      title: 'Kontemplation & Stille 🕯️',
+      subtitle: 'Die Kirche als schutzgebender Kraftort der Seele',
+      description: 'Du empfindest den beschleunigten, reizüberfluteten Alltag oft als Herausforderung für die innere Balance. Du sehnst dich nach Orten der Entschleunigung, an denen du ohne äußere Erwartungen zur Ruhe kommen, meditieren und Kraft sammeln kannst.',
+      advice: 'Unsere geöffneten Kirchengebäude stehen dir als tägliche Oasen der Stille offen. Nutze diese geschützten Räume, um im kontemplativen Schweigen, bei leiser Orgelmusik oder im sanften Licht einer Kerze den inneren Frieden wiederzufinden. Auch meditative Andachten, Taizé-Vespern und spirituelle Einkehrtage bieten dir wertvolle Ankerpunkte.',
       bgGradient: 'from-sky-50 to-sky-100 border-sky-200'
     }
   };
@@ -180,13 +180,13 @@ export default function MachDenTest() {
       {/* Intro section */}
       <section className="text-center max-w-2xl mx-auto">
         <span className="text-xs font-mono uppercase bg-church-gold/20 text-church-navy px-3 py-1 rounded-full font-semibold">
-          Interaktiver Selbsttest
+          Interaktiver Orientierungstest
         </span>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-church-navy mt-3">
-          Was bedeutet Kirche für dich?
+          Was bedeutet Glaube für dich?
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Jeder Mensch hat ein anderes inneres Bedürfnis nach Gemeinschaft, Sinnsuche, Hilfe oder Ruhe. Mach den 60-Sekunden-Test und erfahre, welcher spirituelle Entdeckertyp in dir schlummert!
+          Jeder Mensch trägt eine ganz persönliche Sehnsucht in sich – nach tragfähiger Gemeinschaft, intellektueller Sinnsuche, sozialer Wirksamkeit oder kontemplativer Stille. Dieser kurze Orientierungstest lädt dich ein, deine eigene spirituelle Resonanz zu ergründen.
         </p>
       </section>
 
@@ -199,14 +199,14 @@ export default function MachDenTest() {
               <Compass className="h-5 w-5" />
             </div>
             <div>
-              <span className="text-xs font-mono text-church-gold uppercase tracking-wider font-semibold">Persönlichkeitstest</span>
+              <span className="text-xs font-mono text-church-gold uppercase tracking-wider font-semibold">Orientierungstest</span>
               <h3 className="font-serif font-bold text-base sm:text-lg">
                 {!showResult ? `Frage ${currentQuestion + 1} von ${questions.length}` : 'Deine Auswertung'}
               </h3>
             </div>
           </div>
           <span className="text-xs font-mono text-gray-300">
-            {!showResult ? `${progressPercent}% geschafft` : 'Fertig!'}
+            {!showResult ? `${progressPercent}% abgeschlossen` : 'Fertiggestellt'}
           </span>
         </div>
 
@@ -278,7 +278,7 @@ export default function MachDenTest() {
                     {/* Detailed evaluation paragraphs */}
                     <div className="space-y-4">
                       <h4 className="font-serif font-bold text-lg text-church-navy border-b border-church-border pb-2">
-                        Was das über dich aussagt
+                        Deine spirituelle Disposition
                       </h4>
                       <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
                         {resultData.description}
@@ -288,7 +288,7 @@ export default function MachDenTest() {
                     <div className="bg-church-bg p-6 rounded-[24px] border-l-4 border-church-gold space-y-2 border border-church-border">
                       <h4 className="font-serif font-bold text-church-navy text-sm sm:text-base flex items-center space-x-1.5">
                         <Sparkles className="h-4 w-4 text-church-gold" />
-                        <span>Empfehlung für dich</span>
+                        <span>Inspiration für deinen Weg</span>
                       </h4>
                       <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">
                         {resultData.advice}
@@ -302,14 +302,14 @@ export default function MachDenTest() {
                         <span>Deine spirituelle Resonanz-Verteilung</span>
                       </h4>
                       <p className="text-xs text-gray-500 leading-normal font-light">
-                        Dein Antwortverhalten zeigt Berührungspunkte in mehreren Facetten deines Lebens. So verteilen sich deine Interessen auf unsere vier Hauptthemengebiete:
+                        Deine getroffenen Wahlen spiegeln vielschichtige Dimensionen deiner Persönlichkeit wider. Das Diagramm veranschaulicht deine individuelle Affinität zu den vier tragenden Säulen gelebten Glaubens:
                       </p>
                       <div className="space-y-3.5 pt-2">
                         {[
-                          { key: 'type1', label: 'Gemeinschaftsmensch 👥', color: 'bg-orange-500' },
-                          { key: 'type2', label: 'Sinnsucher 🧭', color: 'bg-indigo-500' },
-                          { key: 'type3', label: 'Der Helfer 🤝', color: 'bg-emerald-500' },
-                          { key: 'type4', label: 'Ruhesucher 🕯️', color: 'bg-sky-500' },
+                          { key: 'type1', label: 'Gemeinschaft & Begegnung 👥', color: 'bg-orange-500' },
+                          { key: 'type2', label: 'Sinnsuche & Reflexion 🧭', color: 'bg-indigo-500' },
+                          { key: 'type3', label: 'Tätige Solidarität 🤝', color: 'bg-emerald-500' },
+                          { key: 'type4', label: 'Kontemplation & Stille 🕯️', color: 'bg-sky-500' },
                         ].map((item) => {
                           const pct = getScorePercentages()[item.key as keyof ReturnType<typeof getScorePercentages>];
                           return (
@@ -334,7 +334,7 @@ export default function MachDenTest() {
 
                     {/* CTA button inside */}
                     <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-church-border text-xs text-gray-500 font-mono">
-                      <span>Mit ehrlicher Neugier weiterfragen</span>
+                      <span>Mit Offenheit und Neugier weitergehen</span>
                       <button
                         id="reset-quiz-btn"
                         onClick={handleReset}

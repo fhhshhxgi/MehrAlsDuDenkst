@@ -24,32 +24,32 @@ export default function WasIstKatholisch() {
       title: 'Jesus Christus',
       year: 'ca. 30 n. Chr.',
       subtitle: 'Der Ausgangspunkt unseres Glaubens',
-      description: 'Jesus von Nazaret verkündet das Reich Gottes: eine Botschaft der Liebe, Vergebung und unbedingten Menschenwürde.',
-      expandedDetails: 'Sein Leben, sein Tod am Kreuz und der Glaube an seine Auferstehung begründen den christlichen Weg. Er wendet sich gezielt den Schwachen, Kranken und Ausgegrenzten zu – ein radikales Vorbild für soziale Gerechtigkeit, das bis heute die Richtschnur für katholisches Handeln ist.',
+      description: 'Jesus von Nazaret verkündete eine radikale Botschaft des Friedens, der bedingungslosen Nächstenliebe und der unantastbaren Würde jedes Einzelnen.',
+      expandedDetails: 'Sein Wirken, sein Tod am Kreuz und das Zeugnis der Auferstehung bilden das unerschütterliche Fundament christlicher Existenz. Sein besonderes Augenmerk galt den Marginalisierten und Entrechteten – bis heute ein bleibender Auftrag für soziale Gerechtigkeit und solidarisches Handeln.',
       icon: <BookOpen className="h-5 w-5 text-church-navy" />
     },
     {
       title: 'Die ersten Christen',
       year: 'ab 33 n. Chr.',
       subtitle: 'Die Botschaft breitet sich aus',
-      description: 'Von Jerusalem aus reisen Apostel wie Petrus und Paulus umher, um Menschen über Sprach- und Kulturgrenzen hinweg zu begeistern.',
-      expandedDetails: 'Zuerst eine verfolgte Minderheit, gründen die ersten Christinnen und Christen dichte Schutzgemeinschaften. Sie teilen ihren Wohlstand, beten gemeinsam und pflegen kranke Menschen. Dieser Gemeinschaftssinn erweist sich als weltliches Magnet und legt den Samen für eine neue Epoche.',
+      description: 'Ausgehend von Jerusalem verbreiteten die Apostel – allen voran Petrus und Paulus – die frohe Botschaft im gesamten antiken Mittelmeerraum.',
+      expandedDetails: 'Trotz Verfolgung und Marginalisierung zeichnete sich die urchristliche Gemeinschaft durch einen außergewöhnlichen Zusammenhalt aus. Sie teilten ihren Besitz, pflegten Kranke und feierten gemeinsam das Herrenmahl – eine gelebte Solidarität, die gesellschaftliche Barrieren überwand.',
       icon: <Users2 className="h-5 w-5 text-church-navy" />
     },
     {
       title: 'Die Kirche entsteht',
       year: 'ab ca. 100 n. Chr.',
       subtitle: 'Aus Gemeinden wächst Struktur',
-      description: 'Zentrale Feiern wie die Eucharistie entstehen, Kirchenämter bilden sich, verbindliche Glaubenstexte werden geordnet.',
-      expandedDetails: 'Aus losen Hauskirchen entsteht über Generationen eine weltumspannende Organisationsstruktur mit Bischöfen und dem Papst als Nachfolger des Apostels Petrus. Rituale, Feiern und das Kirchenjahr strukturieren den Alltag und geben Halt in stürmischen Zeiten der Weltgeschichte.',
+      description: 'Aus den lokalen Hauskirchen erwuchsen verbindliche theologische Strukturen, Sakramente wie die Eucharistie und die Kanonisierung der heiligen Schriften.',
+      expandedDetails: 'Im Laufe der Jahrhunderte festigte sich die sakramentale und hierarchische Struktur der Kirche mit dem Papst – als Nachfolger Petri – und den Bischöfen an der Spitze. Liturgische Traditionen und Rituale gaben den Gläubigen Orientierung inmitten der wechselvollen Weltgeschichte.',
       icon: <Layers className="h-5 w-5 text-church-navy" />
     },
     {
       title: 'Weltweite Kirche',
       year: 'Heute',
       subtitle: 'Eins in großer Vielfalt',
-      description: 'Mit über 1,3 Milliarden Mitgliedern ist die katholische Kirche heute eine bunte, sprachlich und kulturell diverse globale Allianz.',
-      expandedDetails: 'Ob im Regenwald Südamerikas, in afrikanischen Metropolen oder europäischen Dörfern – überall kommen Menschen unter denselben Symbolen zusammen. Trotz lokaler Differenzen verbindet sie der Glaube an Gott und der Auftrag zur weltweiten Nächstenliebe (Caritas).',
+      description: 'Als globale Gemeinschaft vereint die katholische Kirche heute über 1,3 Milliarden Menschen unterschiedlichster Kulturen und Herkunft.',
+      expandedDetails: 'Ob in Lateinamerika, afrikanischen Metropolen oder europäischen Gemeinden – die Einheit im Glauben und im liturgischen Vollzug überwindet nationale sowie kulturelle Differenzen. Sie verbindet uns zu einer weltumspannenden Weggemeinschaft der Nächstenliebe.',
       icon: <Globe2 className="h-5 w-5 text-church-navy" />
     }
   ];
@@ -65,7 +65,7 @@ export default function WasIstKatholisch() {
           Was bedeutet eigentlich „katholisch“?
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Die katholische Kirche ist eine große und geschichtsträchtige christliche Glaubensgemeinschaft. Im Kern steht der Glaube an Gott, der uns in Jesus Christus begegnet ist und durch den Heiligen Geist lebendig in uns wirkt. Es geht dabei um weit mehr als um nackte Paragraphen – es geht um ein Fundament der Hoffnung, das Generationen verbindet.
+          Die katholische Kirche bildet das weltweit größte christliche Netzwerk des Glaubens. Im Zentrum unserer Identität stehen das unbedingte Vertrauen in Jesus Christus und die gelebte Nachfolge. Dabei erschöpft sich der Glaube nicht in formalen Dogmen, sondern verwirklicht sich in Hoffnung, caritativer Unterstützung und gelebter Solidarität.
         </p>
       </section>
 
@@ -76,7 +76,7 @@ export default function WasIstKatholisch() {
             Die Entstehungsgeschichte
           </h2>
           <p className="text-gray-500 text-sm">
-            Klicke auf die einzelnen Epochen auf der Zeitleiste, um mehr über die jeweilige Entstehung und tiefere theologische Bedeutung zu erfahren:
+            Wähle die einzelnen Epochen auf der Zeitleiste aus, um tiefere Einblicke in deren theologische Relevanz und historische Entwicklung zu erhalten:
           </p>
 
           <div className="space-y-4 pt-4 relative border-l-2 border-church-navy/10 pl-6 sm:pl-8 ml-3">
@@ -171,10 +171,10 @@ export default function WasIstKatholisch() {
               Schon gewusst? Das Wort „katholisch“
             </h3>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Das Wort katholisch leitet sich vom altgriechischen Wort <strong>„katholikos“</strong> ab und bedeutet übersetzt ursprünglich <strong>„allgemein“</strong>, <strong>„allumfassend“</strong> oder <strong>„weltweit“</strong>. 
+              Der Begriff „katholisch“ leitet sich vom altgriechischen Wort <strong>„katholikos“</strong> ab, was übersetzt so viel wie <strong>„das Ganze betreffend“</strong>, <strong>„allgemein“</strong> oder <strong>„allumfassend“</strong> bedeutet.
             </p>
-            <p className="text-sm text-gray-200 font-light">
-               Und das beschreibt das Ideal auch perfekt: Es soll keine exklusive Gruppe sein, sondern eine globale, menschliche Familie, die über alle nationalen Grenzen hinweg offen für jeden ist – unabhängig von Herkunft, Reichtum oder sozialem Rang.
+            <p className="text-sm text-gray-200 font-light leading-relaxed">
+               In dieser Begrifflichkeit artikuliert sich ein hohes inklusives Ideal: Die Kirche versteht sich nicht als exklusiver Zirkel, sondern als eine offene, weltumspannende Gemeinschaft, die jedem Menschen – unabhängig von Herkunft, Status oder individuellem Glaubensweg – Raum für Orientierung, Zuflucht und Mitgestaltung bietet.
             </p>
           </div>
         </div>

@@ -47,43 +47,43 @@ export default function FesteSymbole() {
     {
       name: 'Weihnachten',
       season: 'Dezember (Winter)',
-      description: 'Christen feiern die Menschwerdung Gottes durch die Geburt Jesu in einem einfachen Stall in Betlehem.',
-      theology: 'Gott begegnet uns nicht als ferner Herrscher, sondern wehrlos und zerbrechlich wie ein neugeborenes Kind.',
+      description: 'Die Feier der Menschwerdung Gottes: Ein Ereignis, das sich in aller Bescheidenheit und Abgewandtheit von weltlicher Macht, symbolisiert durch den Stall von Betlehem, vollzieht.',
+      theology: 'Die Zusage einer bedingungslosen Nähe: Gott offenbart sich nicht in unnahbarer Macht, sondern in der verletzlichen Existenz eines Neugeborenen.',
       icon: <Gift className="h-5 w-5 text-indigo-600" />
     },
     {
       name: 'Ostern',
       season: 'März / April (Frühling)',
-      description: 'Das allerwichtigste christliche Fest: Die Feier von Jesu Leiden, seinem Tod am Kreuz und seiner Auferstehung von den Toten.',
-      theology: 'Der Tod hat nicht das letzte Wort. Das Leben, das Licht und die Liebe gewinnen über Hass und Verzweiflung.',
+      description: 'Das theologische Fundament des Kirchenjahres: Wir feiern das Ostergeheimnis der Auferstehung Christi und den endgültigen Triumph des Lebens über den Tod.',
+      theology: 'Die Überwindung des Endgültigen: Hoffnung, Liebe und Leben behalten im Angesicht von Leid, Verlust und Angst das letzte Wort.',
       icon: <Sun className="h-5 w-5 text-amber-600" />
     },
     {
       name: 'Die Taufe',
       season: 'Sakrament',
-      description: 'Ein Mensch wird mit Wasser begossen und offiziell liebevoll in die christliche Familie aufgenommen.',
-      theology: 'Die unzerstörbare Zusage Gottes: „Du bist mein geliebtes Kind, ich gehe jeden Schritt deines Lebens mit.“',
+      description: 'Die feierliche Aufnahme in die weltweite christliche Gemeinschaft durch das sakramentale Zeichen des Wassers.',
+      theology: 'Das unwiderrufliche Heilsversprechen: Du bist bedingungslos angenommen und getragen auf allen Wegen des Lebens.',
       icon: <Waves className="h-5 w-5 text-sky-600" />
     },
     {
       name: 'Die Erstkommunion',
       season: 'Sakrament',
-      description: 'Kinder empfangen am Altar zum ersten Mal das Brot (Hostie) als spürbares Zeichen der Nähe Jesu.',
-      theology: 'Gemeinschaft erleben. Das Teilen des einen Brotes verbindet uns mit Jesus und stärkt uns gegenseitig.',
-      icon: <Utensils className="h-5 w-5 text-gold-600" />
+      description: 'Die erstmalige Teilnahme am Abendmahl. Das Teilen des gesegneten Brotes (der Hostie) vergegenwärtigt die bleibende Gemeinschaft mit Christus.',
+      theology: 'Erfahrbare Weggemeinschaft: Das sakramentale Teilen stiftet eine tiefe, geistliche Verbindung untereinander und mit Gott.',
+      icon: <Utensils className="h-5 w-5 text-amber-600" />
     },
     {
       name: 'Die Firmung',
       season: 'Sakrament (Jugendalter)',
-      description: 'Jugendliche bestätigen eigenständig und bewusst ihren Glauben und empfangen den Heiligen Geist als Kraftspender.',
-      theology: 'Rückwind fürs Leben. Der Heilige Geist stärkt dich, deine eigene Meinung zu vertreten und mutig deine Zukunft zu bauen.',
+      description: 'Im Jugendalter (meist im 10. Schuljahr) bekräftigst du eigenständig dein Ja-Wort zum Glauben und empfängst den Heiligen Geist als Stärkung und Wegbegleiter für dein Leben.',
+      theology: 'Geistliche Stärkung: Die Zusage des Heiligen Geistes verleiht innere Stärke und Orientierung, um im Alltag mutig eigene Überzeugungen zu vertreten.',
       icon: <Sparkles className="h-5 w-5 text-pink-600" />
     },
     {
       name: 'Das Kirchenjahr',
       season: 'Jahreskreis',
-      description: 'Das Jahr ist strukturiert in Zeiten wie Advent, Weihnachten, Fastenzeit, Ostern und Pfingsten.',
-      theology: 'Der Wechsel der Jahreszeiten erinnert uns daran, dass es im Leben Phasen der Vorbereitung, der Trauer, aber auch des lauten Jubels gibt.',
+      description: 'Die Strukturierung der Zeit: Ein wiederkehrender Rhythmus, bestehend aus Phasen der Besinnung, festlichen Feiern und Zeiten des Dankes.',
+      theology: 'Spiegelbild menschlicher Existenz: Der liturgische Zyklus reflektiert die gesamte Bandbreite des Lebens – von Vorbereitung und Trauer bis hin zu festlicher Freude.',
       icon: <CalendarRange className="h-5 w-5 text-teal-600" />
     }
   ];
@@ -92,9 +92,9 @@ export default function FesteSymbole() {
     {
       id: 'kreuz',
       name: 'Kreuz',
-      theology: 'Zeichen für Jesus, Leiden, Tod und Hoffnung.',
-      explanation: 'Das Kreuz vereint Himmel und Erde, Gott und Mensch. Früher ein grausames Hinrichtungswerkzeug der Römer, ist es durch Jesu Auferstehung zum weltweit stärksten Symbol für die Überwindung des Todes und die Hoffnung auf neues Leben geworden.',
-      reflection: 'Wofür steht das Kreuz für dich? Es erinnert uns daran, dass Gott unsere schwersten Stunden am eigenen Leib geteilt hat. Kein Schmerz bleibt unbegleitet.',
+      theology: 'Symbol des Ostergeheimnisses, der Erlösung und der Hoffnung.',
+      explanation: 'Ursprünglich ein römisches Hinrichtungswerkzeug, wandelte sich das Kreuz durch das Osterereignis zum globalen Symbol christlicher Hoffnung: Es verkündet das Leben, das den Tod überwindet.',
+      reflection: 'Das Kreuz verweist auf das Mitgefühl Gottes: Er ist kein ferner Gott, sondern teilt in Christus menschliches Leid und Angst. In Zeiten der Not sind wir niemals gänzlich verlassen.',
       icon: (
         <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <line x1="12" y1="4" x2="12" y2="20" />
@@ -107,9 +107,9 @@ export default function FesteSymbole() {
     {
       id: 'kerze',
       name: 'Kerze',
-      theology: 'Licht, Wärme und die Nähe Gottes.',
-      explanation: 'Die Kerze steht für Licht in dunklen Momenten. Im christlichen Glauben versinnbildlicht das sanfte Flackern einer Kerze die wärmende Liebe Gottes und die Osterkerze das helle Licht Christi, das alle Finsternis von Angst und Vergänglichkeit vertreibt.',
-      reflection: 'Zünde in Ruhe eine Kerze an. Das warme Leuchten lädt dich ein, deine ungesagten Ängste oder deine Dankbarkeit sachte nach oben steigen zu lassen.',
+      theology: 'Präsenz des göttlichen Lichts und der Zuversicht.',
+      explanation: 'Licht spendet Orientierung und Wärme in der Dunkelheit. Die brennende Kerze versinnbildlicht die Zusage, dass Gottes gütige Gegenwart auch dunkle Kapitel unseres Lebens erhellen kann.',
+      reflection: 'Das Entzünden einer Kerze schafft ein bewusstes Ritual der Ruhe. Ihr sanftes Licht lädt dazu ein, Ängste, Wünsche und Momente der Dankbarkeit in der Stille zu betrachten.',
       icon: <Flame className="h-8 w-8" />,
       borderClass: 'border-l-4 border-orange-500',
       textCol: 'text-orange-500'
@@ -117,9 +117,9 @@ export default function FesteSymbole() {
     {
       id: 'wasser',
       name: 'Wasser',
-      theology: 'Leben, Reinigung und Neuanfang.',
-      explanation: 'Wasser spendet Frische und erhält alles Leben auf unserer Erde – ohne Wasser vertrocknen wir. In der Taufe symbolisiert das Wasser die totale Abwaschung alter Lasten (Sünden) und den glanzvollen Beginn eines völlig neuen Lebens in Gottes Segen.',
-      reflection: 'Spüre beim nächsten Händewaschen ganz bewusst das kühle Nass auf deiner Haut. Wasser reinigt nicht nur, es ist die Quelle allen Lebens.',
+      theology: 'Quell des Lebens, der geistigen Reinigung und des Neubeginns.',
+      explanation: 'Als unentbehrliches Lebenselixier symbolisiert das Taufwasser die Abwaschung des Alten sowie die unzerstörbare Zusage eines gesegneten, geistlichen Neuanfangs.',
+      reflection: 'Elementare Erfahrungen wie fließendes Wasser können uns im Alltag daran erinnern, Ballast bewusst abzustreifen und jeden Tag mit frischer, schöpferischer Kraft zu begegnen.',
       icon: <Waves className="h-8 w-8" />,
       borderClass: 'border-l-4 border-sky-500',
       textCol: 'text-sky-500'
@@ -127,9 +127,9 @@ export default function FesteSymbole() {
     {
       id: 'brot-wein',
       name: 'Brot und Wein',
-      theology: 'Gemeinschaft, Urnahrung und Nähe Jesu.',
-      explanation: 'Brot ist das simpelste Grundnahrungsmittel vieler Kulturen, während Wein für Freude und Festlichkeit steht. Bei der heiligen Messe (Eucharistie) glauben Katholiken, dass in Brot und Wein Jesus selbst im Kreise seiner Freunde gegenwärtig wird.',
-      reflection: 'Gemeinsames Essen verbindet. Brot teilen bedeutet, dem anderen das Überleben zu gönnen. Es erinnert daran, dass wir aufeinander angewiesen sind.',
+      theology: 'Nahrung der Seele, lebendige Gemeinschaft und sakramentale Gegenwart.',
+      explanation: 'Brot steht für das tägliche Auskommen und Überleben, Wein für die festliche Freude des Daseins. In der Eucharistie vergegenwärtigen diese Gaben die bleibende, stärkende Nähe Christi.',
+      reflection: 'Die Mahlgemeinschaft lehrt uns den Wert des Teilens. Wo wir miteinander teilen, überwinden wir soziale Barrieren und stiften gelebte Solidarität.',
       icon: <Utensils className="h-8 w-8" />,
       borderClass: 'border-l-4 border-yellow-500',
       textCol: 'text-yellow-500'
@@ -137,9 +137,9 @@ export default function FesteSymbole() {
     {
       id: 'fisch',
       name: 'Fisch',
-      theology: 'Uraltes geheimes Erkennungszeichen.',
-      explanation: 'In Zeiten der Christenverfolgung im Römischen Reich diente der Fisch (griechisch „ICHTHYS“) als Code. Die Anfangsbuchstaben stehen für: „Jesus Christus, Gottes Sohn, Erlöser“. Wer den Fisch zeichnete, signalisierte: „Ich gehöre auch dazu.“',
-      reflection: 'Der Fisch erinnert uns an schwere Zeiten, in denen Glauben Lebensgefahr bedeutete. Er fordert uns auf, heute friedlich füreinander einzustehen.',
+      theology: 'Historisches Glaubensbekenntnis und Erkennungssymbol.',
+      explanation: 'In Zeiten der Verfolgung diente der Fisch den frühen Christen als diskretes Erkennungszeichen. Das griechische Wort für Fisch, ICHTHYS, bildet als Akrostichon das kürzeste Glaubensbekenntnis: „Jesus Christus, Gottes Sohn, Erlöser“.',
+      reflection: 'Dieses Symbol zeugt vom Mut christlicher Überzeugung im Angesicht persönlicher Risiken. Es mahnt uns heute zu Toleranz und zum Eintreten für Religions- und Meinungsfreiheit.',
       icon: <Fish className="h-8 w-8" />,
       borderClass: 'border-l-4 border-teal-500',
       textCol: 'text-teal-500'
@@ -159,7 +159,7 @@ export default function FesteSymbole() {
           Feste & Symbole erleben
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Glaube drückt sich selten nur durch dicke Bücher aus. Er lebt von Rhythmen, großen Feiern und greifbaren Gegenständen. Lerne die traditionsreichen Feste und geheimnisvollen Symbole kennen, die seit Jahrhunderten unseren Glauben sichtbar machen.
+          Glaube geht weit über dicke, verstaubte Bücher hinaus. Er lebt von Festen, Rhythmen und Symbolen, die man richtig anfassen und erleben kann. Hier findest du die bekanntesten Feste und spannendsten Symbole ganz einfach erklärt.
         </p>
 
         {/* Navigation Selector Tabs */}

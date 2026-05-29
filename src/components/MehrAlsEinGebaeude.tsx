@@ -39,8 +39,8 @@ export default function MehrAlsEinGebaeude() {
       x: 26.25,
       y: 11, // Peak of tower exactly at the golden cross top
       icon: <Sparkle className="h-5 w-5 text-church-gold" />,
-      subtitle: 'Sinnsuche und Gebet',
-      detail: 'Im Innersten der Kirche geht es um den persönlichen Draht zu Gott. Fernab vom Alltagsfeuer gibt es hier Raum, um tief zu atmen, Sorgen abzugeben, Kerzen anzuzünden und spirituellen Frieden zu finden.',
+      subtitle: 'Sinnsuche und persönliches Gebet',
+      detail: 'Im Zentrum christlichen Glaubens steht die persönliche Beziehung zu Gott. Fernab der Alltagshektik bieten unsere Kirchen Räume der Stille, um innezuhalten, Sorgen im Gebet abzugeben, eine Kerze zu entzünden und neuen inneren Frieden zu finden.',
       quote: '„Nicht jeder Glaube beginnt mit Gewissheit, manchmal beginnt er mit einer stillen Kerze.“'
     },
     {
@@ -49,8 +49,8 @@ export default function MehrAlsEinGebaeude() {
       x: 26.25,
       y: 43, // Upper tower window (Bell gallery/Organ loft)
       icon: <Music4 className="h-5 w-5 text-sky-500" />,
-      subtitle: 'Der gemeinsame Klang',
-      detail: 'Musik verbindet Körper und Seele. Von alten majestätischen Orgelklängen über klassische Chormusik bis hin zu modernen Gospelbands, Jugendgitarrenkreisen oder experimenteller Synthie-Kirchenmusik.',
+      subtitle: 'Verbindendes Klingen',
+      detail: 'In der Musik findet der Glaube seine lebendigste Sprache. Ob im barocken Klang der Orgel, in einem Chor oder in zeitgenössischen Bands und Jugendmusikprojekten – das gemeinsame Musizieren verbindet Generationen und stiftet Gemeinschaft.',
       quote: '„Wer singt, betet bekanntlich doppelt. Töne reißen Mauern im Herzen ein, die rationale Argumente nicht berühren.“'
     },
     {
@@ -59,8 +59,8 @@ export default function MehrAlsEinGebaeude() {
       x: 50,
       y: 58, // Nested perfectly inside the majestic main round stained class window
       icon: <Home className="h-5 w-5 text-teal-500" />,
-      subtitle: 'Immer ein offenes Ohr',
-      detail: 'Seelsorger unterliegen strengster Schweigepflicht. Hier kannst du Krisen, Beziehungsfragen, Schuldgefühle oder Lebenszweifel ungeschönt auf den Tisch legen – ohne bewertet oder verurteilt zu werden.',
+      subtitle: 'Ein verlässlicher Ansprechpartner',
+      detail: 'Unsere Seelsorger stehen dir in allen Lebenslagen als vertrauensvolle Gesprächspartner zur Seite. Unter dem Schutz der gesetzlichen Schweigepflicht kannst du persönliche Krisen, Sinnfragen oder Zweifel vollkommen frei, vertraulich und unvoreingenommen besprechen.',
       quote: '„Manchmal hilft es schon, wenn einer einfach nur dableibt und mitschweigt.“'
     },
     {
@@ -69,28 +69,28 @@ export default function MehrAlsEinGebaeude() {
       x: 75,
       y: 62, // Upper floor of Parish building wing under the cozy gabled roof
       icon: <Smile className="h-5 w-5 text-pink-500" />,
-      subtitle: 'Zukunft selbst gestalten',
-      detail: 'Pfadfinder, Messdiener, Gruppenstunden und unvergessliche Sommerfreizeiten. Hier lernen junge Menschen Selbstständigkeit, reflektieren Werte, diskutieren Sorgen und schließen treue Freundschaften fürs Leben.',
+      subtitle: 'Mitverantwortung und Freiräume',
+      detail: 'Jugendverbände wie Pfadfinder, Messdiener oder die KJG bieten jungen Menschen wichtige Freiräume zur Selbstentfaltung. Hier lernen Jugendliche, eigene Ideen zu entwickeln, Verantwortung zu übernehmen und wertvolle Gemeinschaft zu erfahren.',
       quote: '„Hier herrscht kein Redeverbot. Hier lernen wir, laut zu sein für das Gute.“'
     },
     {
       id: 'hilfe',
-      name: 'Hilfe',
+      name: 'Hilfe & Beratung',
       x: 26.25,
       y: 76, // Left wing ground-level/accessible Caritas office
       icon: <HeartHandshake className="h-5 w-5 text-emerald-500" />,
-      subtitle: 'Nächstenliebe im Handeln',
-      detail: 'Praktische Unterstützung für Menschen am Rande der Gesellschaft: Obdachlosenhilfe, Essensausgaben, Krankenbetreuung, Hilfe für geflüchtete Menschen und unkomplizierte Schuldnerberatungen.',
+      subtitle: 'Gelebte Nächstenliebe',
+      detail: 'Die Caritas und lokale Initiativen bieten unmittelbare, unbürokratische Unterstützung für Benachteiligte. Von der Kälte- und Wohnungslosenhilfe über die Begleitung von Geflüchteten bis hin zu kostenfreien Beratungsangeboten wird praktizierte Mitmenschlichkeit greifbar.',
       quote: '„Nächstenliebe ist kein schickes Sonntagsgerede. Sie wird mit schmutzigen Händen am Montag gemacht.“'
     },
     {
       id: 'feste',
       name: 'Feste & Rituale',
-      x: 75,
+      x: 89,
       y: 80, // Right annex stained glass windows
       icon: <Milestone className="h-5 w-5 text-amber-500" />,
-      subtitle: 'Schnittpunkte des Lebens',
-      detail: 'Feste geben unserem Jahr und Leben Struktur. Von festlichen Christmetten über fröhliche Taufen, Kommunionen, Hochzeiten bis zur tröstenden Begleitung an Gräbern – Symbole begleiten Übergänge.',
+      subtitle: 'Meilensteine des Lebens',
+      detail: 'Feste und christliche Rituale strukturieren die Übergänge und Stationen des menschlichen Lebens. Von feierlichen kirchlichen Festen über Taufen und Eheschließungen bis hin zur tröstenden, würdevollen Begleitung im Sterbefall eines Angehörigen.',
       quote: '„Wenn Worte aufhören, fangen unsere Sakramente und Feste an uns zu tragen.“'
     },
     {
@@ -99,8 +99,8 @@ export default function MehrAlsEinGebaeude() {
       x: 50,
       y: 86, // Double doors entrance portal at the bottom center
       icon: <Users2 className="h-5 w-5 text-indigo-500" />,
-      subtitle: 'Zugehörigkeit erleben',
-      detail: 'Kirche ist da, wo Menschen zusammenkommen. Ob Großelterngeneration oder Krabbelgruppe – in Gemeinschaften wird gefeiert, gelacht, getrauert und füreinander eingestanden. Das überwindet Isolation.',
+      subtitle: 'Begegnung und Beistand',
+      detail: 'Kirche verwirklicht sich wesentlich in der Begegnung. Als generationenübergreifende Gemeinschaft wollen wir Freude und Hoffnung, aber auch Trauer und Sorgen miteinander teilen, sodass niemand vereinsamt.',
       quote: '„Kirche ist keine Show für Einzelgänger. Sie ist eine Familie aus Fehlbaren, die gemeinsam geht.“'
     }
   ];
@@ -118,7 +118,7 @@ export default function MehrAlsEinGebaeude() {
           Mehr als ein Gebäude aus Stein
         </h1>
         <p className="text-gray-600 mt-4 leading-relaxed text-sm sm:text-base">
-          Ein Kirchengebäude ist von Weitem sichtbar – ein Monument aus Stein, Ziegeln und Holz. Doch seinen wahren Zweck erfüllt es erst, wenn Menschen es mit Leben füllen. Entdecke, wie viele Dimensionen sich hinter den Fassaden im Alltag entfalten.
+          Eine Kirche sieht man meistens schon von Weitem, aus Stein gebaut und mit einem hohen Turm. Doch das Gebäude ist nur die Hülle. Zum Leben erweckt wird es erst durch die Menschen darin. Finde heraus, was sich hinter den alten Mauern verbirgt.
         </p>
       </section>
 

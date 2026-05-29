@@ -111,97 +111,56 @@ export default function App() {
         onResetTour={handleResetTour}
       />
 
-      {/* Campaign footer - Clean, professional, styled layout */}
+      {/* Campaign footer - Redesigned with a strong boundary line and no navigation elements */}
       {activePage !== 'start' && (
-        <footer id="app-footer" className="bg-church-navy text-gray-300 pt-16 pb-8 border-t-[4px] border-church-gold mt-auto">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-            
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-              {/* Slogan segment */}
-              <div className="md:col-span-5 space-y-4">
-                <div className="flex items-center space-x-2">
-                  <Landmark className="h-6 w-6 text-church-gold" />
-                  <span className="font-serif text-lg font-bold text-white uppercase tracking-tight">
-                    Mehr als du denkst.
-                  </span>
+        <>
+          <footer id="app-footer" className="relative bg-[#040A12] text-gray-300 py-16 overflow-hidden border-t-8 border-[#050B12] shadow-[0_-10px_20px_rgba(0,0,0,0.15)]">
+            {/* Ambient gold low-glow light */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#D6A84F]/5 rounded-full blur-[100px] pointer-events-none" />
+
+            <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
+              {/* Campaign Logo & Headliner */}
+              <div className="space-y-3">
+                <div className="inline-flex items-center justify-center p-2.5 bg-white/5 rounded-2xl border border-white/10 shadow-inner mb-2">
+                  <span className="text-xl">✨</span>
                 </div>
-                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
-                  Ein kreatives Schülerprojekt zur Auseinandersetzung mit dem Reichtum des Glaubens, gelebter Gemeinschaft, stützender Caritas und der Kraft der Hoffnung im turbulenten Alltag.
+                <h3 className="font-serif text-3xl sm:text-4xl font-black text-white tracking-tight">
+                  Mehr als du denkst<span className="text-[#D6A84F]">.</span>
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-400 max-w-lg mx-auto leading-relaxed font-sans">
+                  Glaube ist kein staubiges Relikt, sondern echte Gemeinschaft, tiefe Sinnsuche im Alltag und tatkräftige Hilfe genau da, wo sie vor Ort gebraucht wird.
                 </p>
               </div>
 
-              {/* In-site Links segment */}
-              <div className="md:col-span-3 space-y-4">
-                <h4 className="font-serif font-bold text-white text-sm sm:text-base border-b border-gray-700/60 pb-1.5">
-                  Themenbereiche
-                </h4>
-                <div className="grid grid-cols-1 gap-2 text-xs">
-                  <button 
-                    onClick={() => { setActivePage('was-ist-katholisch'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
-                    className="text-left text-gray-400 hover:text-church-gold transition-colors"
+              {/* Clean decorative divider line */}
+              <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent mx-auto pt-1" />
+
+              {/* Lower Deck: Legal triggers and Action controls */}
+              <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 pt-4 gap-4">
+                <p className="text-gray-500 font-sans">
+                  © {new Date().getFullYear()} – Cristian Liebrecht
+                </p>
+
+                <div className="flex items-center gap-6">
+                  <button
+                    onClick={handleResetTour}
+                    className="text-gray-400 hover:text-white transition-colors font-mono text-[11px] bg-transparent border-none cursor-pointer"
                   >
-                    Was ist katholisch?
+                    Tour zurücksetzen
                   </button>
-                  <button 
-                    onClick={() => { setActivePage('mehr-als-ein-gebaeude'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
-                    className="text-left text-gray-400 hover:text-church-gold transition-colors"
+                  <button
+                    onClick={() => setShowLegal(true)}
+                    className="text-[#D6A84F] hover:text-white transition-colors hover:underline cursor-pointer bg-transparent border-[#040A12] outline-hidden font-medium text-xs flex items-center gap-1.5"
                   >
-                    Mehr als ein Gebäude
-                  </button>
-                  <button 
-                    onClick={() => { setActivePage('glaube-im-alltag'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
-                    className="text-left text-gray-400 hover:text-church-gold transition-colors"
-                  >
-                    Glaube im Alltag
-                  </button>
-                  <button 
-                    onClick={() => { setActivePage('kirche-hilft'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
-                    className="text-left text-gray-400 hover:text-church-gold transition-colors"
-                  >
-                    Kirche hilft
-                  </button>
-                  <button 
-                    onClick={() => { setActivePage('mach-den-test'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
-                    className="text-left text-gray-400 hover:text-church-gold transition-colors font-bold"
-                  >
-                    Mach den Test
+                    <Scale className="h-4 w-4" />
+                    <span>Impressum & Datenschutz</span>
                   </button>
                 </div>
               </div>
 
-              {/* Campaign material quick jumper */}
-              <div className="md:col-span-4 space-y-4">
-                <h4 className="font-serif font-bold text-white text-sm sm:text-base border-b border-gray-700/60 pb-1.5">
-                  Werbung & Schulprojekt
-                </h4>
-                <p className="text-xs text-gray-400 font-light leading-relaxed">
-                  Dieses schulische Gestaltungskonzept präsentiert begleitende Poster, Social-Media-Kacheln und editierbare Falt-Wickelfalzflyer.
-                </p>
-                <button
-                  id="footer-media-cta-btn"
-                  onClick={() => { setActivePage('kampagnenmaterial'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="px-4 py-2 bg-white/5 hover:bg-church-gold hover:text-church-navy border border-white/10 rounded-lg text-xs font-semibold tracking-wide transition-all uppercase flex items-center space-x-1.5 cursor-pointer"
-                >
-                  <span>Alle Werbekampagnen-Medien sichten</span>
-                </button>
-              </div>
             </div>
-
-            <div className="border-t border-gray-800/80 pt-8 flex flex-col md:flex-row items-center justify-end text-xs text-gray-500 font-mono gap-4">
-              
-              <div className="flex flex-col items-end gap-1 font-mono text-[10px]">
-                <span>© {new Date().getFullYear()} – Schülerprojekt (Keine offizielle Kirche)</span>
-                <button
-                  onClick={() => setShowLegal(true)}
-                  className="text-church-gold hover:text-white transition-colors hover:underline font-bold mt-1 text-right cursor-pointer bg-transparent border-0 outline-hidden"
-                >
-                  Rechtliche Hinweise & Impressum
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </footer>
+          </footer>
+        </>
       )}
 
       {/* PROFESSIONAL HIGH-END LEGAL NOTICE MODAL (SCHÜLERPROJEKT) */}

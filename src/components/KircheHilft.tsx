@@ -41,8 +41,8 @@ export default function KircheHilft() {
       icon: <Heart className="h-6 w-6" />,
       iconBg: 'bg-red-50',
       iconColor: 'text-red-600',
-      desc: 'Praktische Unterstützung für Menschen ohne ausreichend Geld, Nahrung oder feste Unterkunft. Wärmestuben, Kleiderkammern und Essensausgaben retten Leben an frostigen Tagen.',
-      example: 'Ein konkretes Beispiel: Die „Tafeln“ und Vesperkirchen versorgen wöchentlich tausende Bedürftige mit warmen Speisen und respektvoller Zuwendung.',
+      desc: 'Unmitellbare und unbürokratische Unterstützung für Menschen in prekären Lebenslagen oder ohne festen Wohnsitz. Wärmestuben, Kleiderkammern und Lebensmittelausgaben sichern die existentiellen Grundbedürfnisse.',
+      example: 'Lokale Ausgabestellen versorgen wöchentlich bedürftige Personen mit Lebensmitteln und bieten Raum für offene, wertschätzende Begegnungen.',
       stats: 'Hunderttausende Essensausgaben jährlich'
     },
     {
@@ -52,8 +52,8 @@ export default function KircheHilft() {
       icon: <Hand className="h-6 w-6" />,
       iconBg: 'bg-emerald-50',
       iconColor: 'text-emerald-600',
-      desc: 'Besuche gegen die Einsamkeit, professionelle Pflege, seelsorgliche Hospizbegleitung und geduldiges Dasein in den letzten Momenten des Lebens.',
-      example: 'Die ehrenamtlichen Krankenbesuchsdienste schenken pflegebedürftigen Menschen in Heimen Gehör und Herzenswärme.',
+      desc: 'Präventive Angebote gegen die Vereinsamung im Alter, Unterstützung in der häuslichen Pflege sowie die würdevolle Begleitung sterbenskranker Menschen und ihrer Angehörigen.',
+      example: 'Ambulante Hospizdienste und Seniorenbesuchskreise schenken aufmerksame Zuwendung, führen Gespräche und begleiten Betroffene verlässlich.',
       stats: 'Tausende Pflegestationen und Besuchskreise'
     },
     {
@@ -63,8 +63,8 @@ export default function KircheHilft() {
       icon: <Home className="h-6 w-6" />,
       iconBg: 'bg-indigo-50',
       iconColor: 'text-indigo-600',
-      desc: 'Kindertagesstätten (Kitas), freie Schulen, lebendige Jugendzentren und betreute Ferienfreizeiten bieten Schutz, Halt und faire Chancen auf Bildung.',
-      example: 'Allein die katholischen Jugendverbände bieten Freizeiten an, an denen jedes Kind, unabhängig vom Einkommen der Eltern, teilnehmen kann.',
+      desc: 'Flächendeckende Trägerschaften von Kindertagesstätten, offene Kinder- und Jugendarbeit sowie erlebnispädagogische Angebote schaffen geschützte Räume zur persönlichen Entfaltung.',
+      example: 'Demokratische Jugendverbände organisieren partnerschaftlich bezuschusste Ferienfreizeiten, um soziale Chancengleichheit aktiv zu fördern.',
       stats: 'Größter freier Träger von Kitas und Erziehung'
     },
     {
@@ -74,8 +74,8 @@ export default function KircheHilft() {
       icon: <Flame className="h-6 w-6" />,
       iconBg: 'bg-amber-50',
       iconColor: 'text-amber-600',
-      desc: 'Kostenlose Ehe- und Familienberatungen, Schwangerschaftsberatungen, Seelsorge bei Verlust sowie die Notfallseelsorge nach schweren Unfällen.',
-      example: 'Die Ökumenische Telefonseelsorge ist an 365 Tagen im Jahr anonym rund um die Uhr völlig kostenlos für alle Sorgen erreichbar.',
+      desc: 'Professionelle, kostenfreie und anonyme Beratungsangebote bei familiären Konflikten, Paarkrisen, Schwangerschaftskonflikten oder seelischen Belastungen.',
+      example: 'Die TelefonSeelsorge ist an 365 Tagen im Jahr rund um die Uhr als hochgradig vertraulicher Gesprächspartner bei persönlichen Krisen erreichbar.',
       stats: 'Telefonseelsorge: 24/7 kostenfrei erreichbar'
     },
     {
@@ -85,8 +85,8 @@ export default function KircheHilft() {
       icon: <Globe2 className="h-6 w-6" />,
       iconBg: 'bg-sky-50',
       iconColor: 'text-sky-600',
-      desc: 'Hilfswerke unterstützen Menschen in den ärmsten Weltregionen bei Hunger, Naturkatastrophen, kriegerischen Konflikten und beim Aufbau von Bildung.',
-      example: 'Aktionen von Misereor oder Adveniat finanzieren sauberes Trinkwasser, Schulen und Existenzgründungen in Entwicklungsländern.',
+      desc: 'Weltweite Entwicklungszusammenarbeit und akute Katastrophenhilfe bei Hunger, Kriegen und Naturkatastrophen zur nachhaltigen Förderung von Bildung und Menschenrechten.',
+      example: 'Hilfswerke wie Misereor oder Adveniat stärken durch finanzielle Hilfe zur Selbsthilfe nachhaltig lokale Strukturen in benachteiligten Regionen des globalen Südens.',
       stats: 'Millionen Menschen in 100+ Ländern unterstützt'
     }
   ];
@@ -99,10 +99,10 @@ export default function KircheHilft() {
           Soziales Gewissen
         </span>
         <h1 className="font-serif text-4xl sm:text-5xl font-bold text-church-navy">
-          Helfen ist kein Extra. Es gehört dazu.
+          Solidarität ist kein Zusatzprodukt. Sie ist Fundament.
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-          Glaube bleibt nicht nur im Kopf und schwelgt in Traditionen – er zeigt sich im konkreten Handeln. Die katholische Kirche ist mit ihrer sozialen Tochter, der <strong>Caritas</strong>, einer der größten Arbeitgeber und Beistände in ganz Deutschland. Tagtäglich wird Nächstenliebe hier in Taten übersetzt.
+          Glaube erschöpft sich nicht in theoretischen Erläuterungen oder historischem Brauchtum – er erweist sich in der Tat. Mit starken Wohlfahrtsverbänden wie der <strong>Caritas</strong> gehört die katholische Kirche zu den tragenden Säulen des Sozialstaates in Deutschland, wo Nächstenliebe täglich in konkretes Handeln übersetzt wird.
         </p>
 
         {/* Dynamic score banners */}
@@ -177,12 +177,13 @@ export default function KircheHilft() {
         <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-church-gold/5 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
           <Award className="h-10 w-10 text-church-gold mx-auto" />
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold">Gegen soziale Kälte aufstehen</h2>
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold">Für soziale Wärme einstehen</h2>
           <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-            Ob in Kitas, hospizen oder weit entfernten Notstandsgebieten – unsere Hilfe diskriminiert nicht. Wir fragen nicht nach Taufschein, Religion oder Status. Wo Not herrscht, steht der Beistand für die Würde des Menschen im Vordergrund.
+            Ob in Kindertagesstätten, in Seniorenzentren oder in der weltweiten Entwicklungszusammenarbeit – caritative Hilfe gilt bedingungslos jedem Menschen. An den Pforten unserer sozialen Einrichtungen wird weder nach Herkunft, Konfession noch nach dem persönlichen Lebensentwurf gefragt. Wo menschliche Not herrscht, ist tatkräftige Hilfe Pflicht.
           </p>
         </div>
       </section>
     </div>
   );
 }
+
