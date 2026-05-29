@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from 'react';
+import OfficialCampaignPoster from './OfficialCampaignPoster';
 import { 
   Instagram, 
   FileText, 
@@ -115,62 +116,7 @@ export default function Kampagne() {
       {/* RENDER ACTIVE TAB */}
       <section className="max-w-4xl mx-auto">
         {activeMediaTab === 'plakat' && (
-          /* TAB 1: PLAKATE RENDERING */
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white p-8 rounded-[40px] border border-church-border shadow-sm">
-            <div className="md:col-span-5 flex justify-center">
-              {/* Graphic Poster mockup */}
-              <div className="w-full max-w-[280px] bg-church-navy text-white p-8 rounded-[24px] shadow-lg border border-church-navy aspect-[1/1.4] flex flex-col justify-between text-center relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-church-gold/5 rounded-full blur-xl" />
-                <span className="font-mono text-[8px] tracking-widest text-church-gold font-bold uppercase">Katholische Kirche</span>
-                
-                <div className="space-y-4">
-                  <h3 className="font-serif text-3xl sm:text-4xl font-extrabold text-white leading-tight">Mehr als du denkst.</h3>
-                  <div className="h-[1.5px] bg-church-gold w-10 mx-auto" />
-                </div>
-                
-                <p className="text-[10px] text-gray-300 font-light leading-relaxed px-1">
-                  Kirche ist nicht nur ein Gebäude.<br />Sie ist Gemeinschaft, Hoffnung und Hilfe.
-                </p>
-
-                {/* Simulated QR code & logo */}
-                <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-                  <div className="text-[7px] text-left font-mono text-gray-400">
-                    Sinnsuche im Alltag •<br />Erfahre mehr auf:<br />
-                    <span className="text-church-gold font-bold">MEHR-ALS-DU-DENKST.DE</span>
-                  </div>
-                  {/* Pseudo QR code block */}
-                  <div className="w-8 h-8 bg-white p-0.5 rounded flex flex-wrap gap-[2px]">
-                    {Array.from({ length: 16 }).map((_, i) => (
-                      <div key={i} className={`w-1.5 h-1.5 ${i % 3 === 0 || i % 7 === 1 ? 'bg-church-navy' : 'bg-transparent'}`} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="md:col-span-7 space-y-6">
-              <span className="text-xs font-mono uppercase bg-church-gold/25 text-church-navy px-3 py-1 rounded-full font-bold">Druckfertiges Plakat</span>
-              <h2 className="font-serif text-3xl font-bold text-church-navy">City-Light Plakat (Ganzseitig)</h2>
-              <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                Dieses Plakat eignet sich perfekt für Schaukästen, Aushänge in Schulen oder Unis, Plakatwände oder Gemeindezentren. Durch die extrem minimalistische, hochwertige Optik bricht es mit der typisch verspielten Kirchengestaltung und zieht junge Blicke an.
-              </p>
-              
-              <div className="space-y-3 bg-church-bg p-5 rounded-[24px] border border-church-border text-xs text-gray-600">
-                <p><strong>Slogan:</strong> Mehr als du denkst.</p>
-                <p><strong>Sub-Botschaft:</strong> Kirche ist nicht nur ein Gebäude. Sie ist Gemeinschaft, Hoffnung und Hilfe.</p>
-                <p><strong>Maße:</strong> DIN A3 / DIN A2 / City-Light Format</p>
-              </div>
-
-              <button
-                id="download-plakat-btn"
-                onClick={() => triggerDownload('Kampagnenplakat_MehrAlsDuDenkst_HighRes.pdf')}
-                className="px-6 py-3 bg-church-navy hover:bg-church-navy/95 text-white font-bold rounded-[16px] text-xs sm:text-sm flex items-center space-x-2 shadow-sm cursor-pointer animate-none"
-              >
-                <Download className="h-4 w-4 text-church-gold" />
-                <span>PDF in Druckauflösung herunterladen</span>
-              </button>
-            </div>
-          </div>
+          <OfficialCampaignPoster onDownloadClick={triggerDownload} />
         )}
 
         {activeMediaTab === 'social' && (
@@ -266,119 +212,16 @@ export default function Kampagne() {
         )}
 
         {activeMediaTab === 'flyer' && (
-          /* TAB 3: COMPLETE BROCHURE / FLYER */
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white p-8 rounded-[40px] border border-church-border shadow-sm">
-            
-            <div className="md:col-span-5 flex flex-col items-center">
-              {/* Dynamic side switcher */}
-              <div className="flex bg-church-bg p-1 rounded-full mb-4">
-                <button
-                  id="flyer-side-vorder-btn"
-                  onClick={() => setFlyerSide('vorder')}
-                  className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase transition-all ${
-                    flyerSide === 'vorder' ? 'bg-church-navy text-white shadow-sm' : 'text-gray-500'
-                  }`}
-                >
-                  Vorderseite
-                </button>
-                <button
-                  id="flyer-side-rueck-btn"
-                  onClick={() => setFlyerSide('rueck')}
-                  className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase transition-all ${
-                    flyerSide === 'rueck' ? 'bg-church-navy text-white shadow-sm' : 'text-gray-500'
-                  }`}
-                >
-                  Rückseite
-                </button>
-              </div>
-
-              {/* Flyer Rendering with flip animation */}
-              <motion.div
-                key={flyerSide}
-                initial={{ opacity: 0, rotateY: 45 }}
-                animate={{ opacity: 1, rotateY: 0 }}
-                transition={{ duration: 0.3 }}
-                className="w-full max-w-[270px] bg-church-navy text-white rounded-[24px] shadow-xl p-6 aspect-[1.1/1.6] flex flex-col justify-between relative overflow-hidden text-center border-l-4 border-church-gold"
-              >
-                <div className="absolute top-0 right-0 p-4 opacity-5">
-                  <Smile className="h-10 w-10 text-white" />
-                </div>
-
-                {flyerSide === 'vorder' ? (
-                  /* FRONT SIDE */
-                  <div className="h-full flex flex-col justify-between py-2">
-                    <span className="font-mono text-[9px] uppercase tracking-widest text-church-gold font-bold">Kampagnen-Flyer</span>
-                    
-                    <div className="space-y-3">
-                      <h3 className="font-serif text-2xl font-bold leading-tight">
-                        Katholische Kirche
-                      </h3>
-                      <p className="font-serif text-church-gold italic text-base">
-                        – mehr als du denkst.
-                      </p>
-                      <div className="h-[1px] bg-white/20 w-8 mx-auto" />
-                    </div>
-
-                    <p className="text-[9px] text-gray-300 leading-relaxed px-4">
-                      Werte, Gemeinschaft, tätige Caritas und die Frage nach Hoffnung im unperfekten Alltag.
-                    </p>
-
-                    <span className="text-[7px] font-mono text-gray-400">Verteiler-Faltflyer • 2026</span>
-                  </div>
-                ) : (
-                  /* BACK SIDE */
-                  <div className="h-full flex flex-col justify-between py-1 text-left">
-                    <span className="font-mono text-[8px] uppercase tracking-widest text-church-gold font-bold text-center block">Unsere Orientierungspunkte</span>
-                    
-                    <div className="space-y-2 mt-4 flex-1">
-                      {[
-                        { num: '👥', label: 'Gemeinschaft', desc: 'Zuflucht gegen Isolation.' },
-                        { num: '🤝', label: 'Hilfe', desc: 'Caritas & Nächstenliebe.' },
-                        { num: '🕯️', label: 'Hoffnung', desc: 'Glaube in schweren Zeiten.' },
-                        { num: '🍇', label: 'Feste & Sakramente', desc: 'Lebensstationen feiern.' },
-                        { num: '💬', label: 'Fragen erlaubt', desc: ' Zweifel heißen wir willkommen.' }
-                      ].map((item, idx) => (
-                        <div key={idx} className="flex gap-2.5 items-center">
-                          <span className="text-sm">{item.num}</span>
-                          <div>
-                            <span className="block font-serif text-[11px] font-bold text-church-gold">{item.label}</span>
-                            <span className="block text-[8px] text-gray-300 leading-none">{item.desc}</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    <span className="text-[6px] font-mono text-gray-400 text-center block pt-2 border-t border-white/10 mt-1">
-                      Fragen? Komm vorbei: www.mehr-als-du-denkst.de
-                    </span>
-                  </div>
-                )}
-              </motion.div>
-            </div>
-
-            {/* Explanation & button download flyer */}
-            <div className="md:col-span-7 space-y-6">
-              <span className="text-xs font-mono uppercase bg-church-gold/25 text-church-navy px-3 py-1 rounded-full font-bold">Zweifach gefaltetes Werbemedium</span>
-              <h2 className="font-serif text-3xl font-bold text-church-navy">Der Verteiler-Flyer</h2>
-              <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                Der Faltflyer ist das perfekte Kampagnenmedium für Infostände oder als Beilage in Briefkästen. Die Vorderseite springt dem Leser durch das unkonventionelle Design auffallend ins Auge. Die Rückseite listet übersichtlich die mit reichlicher Sorgfalt gepflegten Kernthemen auf.
+          <div className="space-y-6">
+            <div className="bg-[#FAF7F0] p-6 rounded-3xl border border-church-border text-center max-w-xl mx-auto mb-4">
+              <span className="text-xs font-mono uppercase bg-church-navy text-church-gold px-3 py-1 rounded-full font-bold">
+                Kampagnenmedien • Falt-Flyer & Handzettel
+              </span>
+              <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed">
+                Der offizielle Handzettel entspricht exakt dem Kampagnenplakat „Mehr als du denkst.“. Sie können die hochauflösende Vektorgrafik direkt herunterladen und als hochwertigen Flyer oder Handzettel drucken.
               </p>
-
-              <div className="space-y-3 bg-church-bg p-5 rounded-[24px] border border-church-border text-xs text-gray-600">
-                <p><strong>Front-Slogan:</strong> Katholische Kirche – mehr als du denkst.</p>
-                <p><strong>Rückseite Kernpunkte:</strong> Gemeinschaft, Hilfe, Hoffnung, Feste, Glaube, Fragen erlaubt</p>
-                <p><strong>Format:</strong> Din Lang (Wickelfalz)</p>
-              </div>
-
-              <button
-                id="download-flyer-btn"
-                onClick={() => triggerDownload('Kampagnenflyer_MehrAlsDuDenkst_Druckvorlage.pdf')}
-                className="px-6 py-3 bg-church-navy hover:bg-church-navy/95 text-white font-bold rounded-[16px] text-xs sm:text-sm flex items-center space-x-2 shadow-sm cursor-pointer"
-              >
-                <Download className="h-4 w-4 text-church-gold" />
-                <span>Flyer-Faltvorlage (.PDF) herunterladen</span>
-              </button>
             </div>
+            <OfficialCampaignPoster onDownloadClick={triggerDownload} />
           </div>
         )}
       </section>
