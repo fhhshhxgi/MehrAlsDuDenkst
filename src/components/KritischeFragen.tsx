@@ -86,9 +86,9 @@ export default function KritischeFragen() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-rose-500/20 border border-rose-500/30 text-rose-350 text-[10px] font-mono font-bold uppercase tracking-wider mb-4"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-rose-950/60 border border-rose-400/40 text-rose-100 text-[11px] font-mono font-black uppercase tracking-wider mb-4 shadow-sm"
           >
-            <MessageCircleOff className="h-3.5 w-3.5 text-rose-400 shrink-0" />
+            <MessageCircleOff className="h-3.5 w-3.5 text-rose-300 shrink-0" />
             <span>Kritik &amp; Wahrhaftigkeit</span>
           </motion.div>
           

@@ -203,16 +203,19 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
       </div>
 
       {/* Decorative Brand Accent with clickable Schülerprojekt disclaimer */}
-      <div className="relative z-10 text-center flex flex-col items-center gap-1.5 mt-2 px-4">
-        <span className="font-mono text-[9px] uppercase tracking-widest text-[#B5C0CD]/75 font-semibold text-center leading-relaxed">
-          Rein fiktives Schülerprojekt — Keine offizielle Kampagne der katholischen Kirche
-        </span>
-        <button
-          onClick={onOpenLegal}
-          className="text-[10px] font-mono text-church-gold hover:text-white transition-colors underline cursor-pointer bg-transparent border-0 outline-hidden py-0.5"
-        >
-          Rechtliche Hinweise & Impressum (Schülerprojekt-Disclaimer)
-        </button>
+      <div className="relative z-10 text-center flex flex-col items-center gap-1.5 mt-2 px-5 max-w-2xl mx-auto w-full">
+        <div className="bg-[#030B12]/85 backdrop-blur-md border border-white/10 px-5 py-3 rounded-2xl sm:rounded-full flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-3.5 shadow-xl w-full">
+          <span className="font-mono text-[10px] uppercase tracking-wider text-gray-200 font-bold text-center leading-relaxed">
+      
+          </span>
+          <span className="hidden sm:inline text-white/20"></span>
+          <button
+            onClick={onOpenLegal}
+            className="text-[10px] font-mono text-church-gold hover:text-white active:text-amber-200 font-bold transition-colors underline cursor-pointer bg-transparent border-0 outline-hidden py-0.5 shrink-0"
+          >
+            Rechtliche Hinweise &amp; Impressum
+          </button>
+        </div>
       </div>
     </div>
   );

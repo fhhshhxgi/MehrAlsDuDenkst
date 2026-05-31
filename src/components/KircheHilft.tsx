@@ -43,14 +43,14 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 35 },
+  hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'spring',
-      stiffness: 85,
-      damping: 15,
+      type: 'tween',
+      ease: 'easeOut',
+      duration: 0.45,
     },
   },
 };
@@ -81,7 +81,7 @@ export default function KircheHilft() {
       desc: 'Präventive Angebote gegen die Vereinsamung im Alter, Unterstützung in der häuslichen Pflege sowie die würdevolle Begleitung sterbenskranker Menschen und ihrer Angehörigen.',
       example: 'Ambulante Hospizdienste und liebevolle Seniorenbesuchskreise schenken kostbare Zeit, hören geduldig zu und spenden echten Beistand.',
       stats: 'Tausende Pflegestationen und Besuchskreise',
-      unsplashUrl: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=600&auto=format&fit=crop'
+      unsplashUrl: 'https://images.unsplash.com/photo-1773227055624-07b515ba87c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
       id: 'kinder',
@@ -105,7 +105,7 @@ export default function KircheHilft() {
       desc: 'Professionelle, kostenfreie und anonyme Beratungsangebote bei familiären Konflikten, schweren Paarkrisen, Schwangerschaftskonflikten oder seelischen Belastungen.',
       example: 'Die TelefonSeelsorge ist an 365 Tagen im Jahr rund um die Uhr als absolut vertraulicher, kostenfreier Ansprechpartner für dich da.',
       stats: 'Telefonseelsorge: 24/7 kostenfrei erreichbar',
-      unsplashUrl: 'https://images.unsplash.com/photo-1516307361165-4740572eb95d?q=80&w=600&auto=format&fit=crop'
+      unsplashUrl: 'https://images.unsplash.com/photo-1609234656388-0ff363383899?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
       id: 'weltweit',
@@ -117,7 +117,7 @@ export default function KircheHilft() {
       desc: 'Weltweite Entwicklungszusammenarbeit und akute Notfallhilfe bei schweren Hungersnöten, Kriegen sowie Naturkatastrophen zur nachhaltigen Förderung von Bildung und Menschenrechten.',
       example: 'Hilfswerke wie Misereor oder Adveniat stärken durch finanzielle Hilfe zur Selbsthilfe direkt lokale Strukturen im globalen Süden.',
       stats: 'Millionen Menschen in 100+ Ländern unterstützt',
-      unsplashUrl: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=600&auto=format&fit=crop'
+      unsplashUrl: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     }
   ];
 

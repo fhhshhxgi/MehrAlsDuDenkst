@@ -86,8 +86,8 @@ export default function MehrAlsEinGebaeude() {
     {
       id: 'feste',
       name: 'Feste & Rituale',
-      x: 89,
-      y: 80, // Right annex stained glass windows
+      x: 75,
+      y: 76, // Right annex stained glass windows
       icon: <Milestone className="h-5 w-5 text-amber-400" />,
       subtitle: 'Meilensteine des Lebens',
       detail: 'Feste und christliche Rituale strukturieren die Übergänge und Stationen des menschlichen Lebens. Von feierlichen kirchlichen Festen über Taufen und Eheschließungen bis hin zur tröstenden, würdevollen Begleitung im Sterbefall eines Angehörigen.',
@@ -165,9 +165,7 @@ export default function MehrAlsEinGebaeude() {
           {/* Subtle grid pattern background */}
           <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
           
-          <div className="absolute top-4 right-4 text-[9px] font-mono text-church-gold/30 tracking-widest uppercase select-none">
-            [ SEC_D-01 // BLU_PRNT ]
-          </div>
+
           
           <div className="mb-6 relative z-10 text-left">
             <h3 className="font-serif text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
@@ -329,7 +327,7 @@ export default function MehrAlsEinGebaeude() {
           <div className="group relative overflow-hidden rounded-[32px] shadow-lg border border-church-border h-64 flex flex-col justify-end p-8 select-none transition-transform duration-500 hover:scale-[1.01]">
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 brightness-[0.35] group-hover:scale-105" 
-              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=600&q=80")' }}
+              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1564732465131-478a336a21ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNpbGVudCUyMHByYXllciUyMGNhbmRsZXN8ZW58MHwwfDB8fHwy")' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#061524] via-[#061524]/65 to-transparent z-0" />
             <div className="relative z-10 space-y-2 text-left">
@@ -349,7 +347,7 @@ export default function MehrAlsEinGebaeude() {
           <div className="group relative overflow-hidden rounded-[32px] shadow-lg border border-church-border h-64 flex flex-col justify-end p-8 select-none transition-transform duration-500 hover:scale-[1.01]">
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 brightness-[0.35] group-hover:scale-105" 
-              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=600&q=80")' }}
+              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1760367120345-2b96c53de838?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGNodXJjaCUyMGNvbW11bml0eSUyMHRvZ2V0aGVyfGVufDB8MHwwfHx8Mg%3D%3D")' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#061524] via-[#061524]/65 to-transparent z-0" />
             <div className="relative z-10 space-y-2 text-left">
@@ -369,7 +367,7 @@ export default function MehrAlsEinGebaeude() {
           <div className="group relative overflow-hidden rounded-[32px] shadow-lg border border-church-border h-64 flex flex-col justify-end p-8 select-none transition-transform duration-500 hover:scale-[1.01]">
             <div 
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 brightness-[0.35] group-hover:scale-105" 
-              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80")' }}
+              style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1593113616828-6f22bca04804?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2h1cmNoJTIwdm9sdW50ZWVycyUyMGhlbHBpbmd8ZW58MHwwfDB8fHwy")' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#061524] via-[#061524]/65 to-transparent z-0" />
             <div className="relative z-10 space-y-2 text-left">

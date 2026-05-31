@@ -78,7 +78,7 @@ export default function FesteSymbole() {
     {
       name: 'Die Firmung',
       season: 'Sakrament (Jugendalter)',
-      description: 'In der 10. Klasse sagst du eigenständig "Ja" zu deinem Glauben und bekommst den Heiligen Geist als Support für deinen Weg.',
+      description: 'Das Sakrament der christlichen Reife: Jugendliche bekräftigen eigenverantwortlich ihren Glauben und empfangen den Heiligen Geist als Beistand und Orientierung für ihren Lebensweg.',
       theology: 'Geistliche Stärkung: Die Zusage des Heiligen Geistes verleiht innere Stärke und Orientierung, um im Alltag mutig eigene Überzeugungen zu vertreten.',
       icon: <Sparkles className="h-5 w-5 text-pink-400" />
     },
@@ -257,30 +257,27 @@ export default function FesteSymbole() {
                       id={`symbol-card-btn-${symbol.id}`}
                       key={symbol.id}
                       onClick={() => setSelectedSymbol(symbol.id)}
-                      className={`p-4 rounded-[22px] border text-left transition-all duration-300 flex items-center justify-between relative cursor-pointer ${
+                      className={`p-4 rounded-[22px] border text-left transition-all duration-300 flex items-center justify-between gap-4 relative cursor-pointer min-w-0 w-full ${
                         isActive
                           ? 'bg-church-gold text-church-navy border-church-gold scale-[1.02] shadow-lg font-bold'
                           : 'bg-white/5 text-gray-200 border-white/10 hover:border-white/20 hover:bg-white/10'
                       }`}
                     >
-                      <div className="flex items-center space-x-3.5">
-                        <span className={`p-2 rounded-xl transition-colors ${isActive ? 'bg-church-navy text-church-gold' : 'bg-white/5 text-church-gold'}`}>
+                      <div className="flex items-center space-x-3.5 min-w-0 flex-1">
+                        <span className={`p-2 rounded-xl shrink-0 transition-colors ${isActive ? 'bg-church-navy text-church-gold' : 'bg-white/5 text-church-gold'}`}>
                           {symbol.icon}
                         </span>
-                        <div>
-                          <span className="block font-serif text-base">{symbol.name}</span>
-                          <span className="text-[10px] font-mono opacity-80 font-light hidden lg:block max-w-xs truncate">
-                            {symbol.theology}
-                          </span>
+                        <div className="min-w-0 flex-1">
+                          <span className="block font-serif text-base truncate">{symbol.name}</span>
                         </div>
                       </div>
                       
                       {isActive ? (
-                        <span className="flex items-center justify-center h-5 w-5 rounded-full bg-church-navy text-church-gold text-xs">
+                        <span className="flex items-center justify-center h-5 w-5 rounded-full bg-church-navy text-church-gold text-xs shrink-0">
                           ✓
                         </span>
                       ) : (
-                        <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Öffnen</span>
+                        <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest shrink-0">Öffnen</span>
                       )}
                     </button>
                   );
@@ -312,8 +309,8 @@ export default function FesteSymbole() {
                       Bedeutung des Symbols: {selectedSymbolData.name}
                     </h3>
 
-                    <p className="text-xs font-mono text-gray-500 bg-church-bg py-2 px-3.5 rounded-xl border border-church-border w-fit font-medium">
-                      Liturgischer Kern: {selectedSymbolData.theology}
+                    <p className="text-xs font-mono text-gray-500 bg-church-bg py-2.5 px-4 rounded-xl border border-church-border block max-w-full break-words font-medium leading-relaxed">
+                      <strong className="text-church-navy">Liturgischer Kern:</strong> {selectedSymbolData.theology}
                     </p>
 
                     <div className="h-[1px] bg-gray-100 mt-4" />
@@ -336,7 +333,7 @@ export default function FesteSymbole() {
 
                   <div className="mt-8 pt-6 border-t border-gray-100 flex justify-between items-center text-[11px] font-mono text-gray-400">
                     <span>Kirche • Symbole des Lebens</span>
-                    <span>katholisch.de</span>
+                    <span>mehralsdudenkst</span>
                   </div>
                 </motion.div>
               </AnimatePresence>

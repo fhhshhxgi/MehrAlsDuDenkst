@@ -27,14 +27,14 @@ const containerVariants = {
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 35 },
+  hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'spring',
-      stiffness: 85,
-      damping: 15,
+      type: 'tween',
+      ease: 'easeOut',
+      duration: 0.45,
     },
   },
 };
