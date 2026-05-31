@@ -104,20 +104,20 @@ export default function TourHUD({
   const handleNextStep = () => {
     if (nextStep) {
       setActivePage(nextStep.id);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0 });
     }
   };
 
   const handlePrevStep = () => {
     if (prevStep) {
       setActivePage(prevStep.id);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0 });
     }
   };
 
   const handleManualStepSelect = (id: PageId) => {
     setActivePage(id);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -127,12 +127,8 @@ export default function TourHUD({
         id="tour-progress-hud"
         className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-4xl font-sans"
       >
-        <motion.div 
-          layout
-          className="relative bg-[#051422]/75 backdrop-blur-2xl border border-white/15 rounded-2xl md:rounded-full py-3 px-4 md:py-3.5 md:px-6 shadow-2xl shadow-black/90 flex flex-col md:flex-row items-center gap-3.5 md:gap-4 justify-between"
-          initial={{ y: 80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, type: 'spring', damping: 22 }}
+        <div 
+          className="relative bg-[#051422]/90 border border-white/15 rounded-2xl md:rounded-full py-3 px-4 md:py-3.5 md:px-6 shadow-2xl shadow-black/90 flex flex-col md:flex-row items-center gap-3.5 md:gap-4 justify-between"
         >
           {/* Subtle thin amber top glow highlighting the bar */}
           <div className="absolute top-0 inset-x-24 h-[1px] bg-gradient-to-r from-transparent via-church-gold/60 to-transparent pointer-events-none" />
@@ -260,7 +256,7 @@ export default function TourHUD({
               </span>
             )}
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   );

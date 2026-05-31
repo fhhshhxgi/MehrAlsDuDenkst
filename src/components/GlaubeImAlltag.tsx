@@ -87,7 +87,7 @@ export default function GlaubeImAlltag() {
       {/* Cinematic Page Header (Golden Sunrise & Warm Woods) */}
       <div className="relative w-full overflow-hidden bg-[#0A1724] py-12 sm:py-20 text-center rounded-[40px] shadow-lg mb-12 select-none group border border-white/5">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-screen scale-105 transition-all duration-1000 group-hover:scale-100" 
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-65 scale-105 transition-all duration-1000 group-hover:scale-100" 
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548625361-155de6c7f54a?q=80&w=1200&auto=format&fit=crop")' }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061524]/70 via-[#0A1724]/90 to-church-navy" />

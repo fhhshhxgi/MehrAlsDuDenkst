@@ -161,7 +161,7 @@ export default function FesteSymbole() {
       {/* Cinematic Banner Header with Unsplash Backing (Mysteries of seasonal/sacramental light glow) */}
       <div className="relative w-full overflow-hidden bg-[#0A1828] py-12 sm:py-20 text-center rounded-[40px] shadow-lg mb-12 select-none group border border-white/5">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-screen scale-105 transition-all duration-1000 group-hover:scale-100" 
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-65 scale-105 transition-all duration-1000 group-hover:scale-100" 
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548625361-155de6c7f54a?q=80&w=1200&auto=format&fit=crop")' }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061524]/60 via-[#0A1724]/90 to-church-navy" />
@@ -257,7 +257,7 @@ export default function FesteSymbole() {
                       id={`symbol-card-btn-${symbol.id}`}
                       key={symbol.id}
                       onClick={() => setSelectedSymbol(symbol.id)}
-                      className={`p-4 rounded-[22px] border text-left transition-all duration-300 flex items-center justify-between gap-4 relative cursor-pointer min-w-0 w-full ${
+                      className={`p-4 rounded-[22px] border text-left transition-all duration-150 touch-manipulation select-none flex items-center justify-between gap-4 relative cursor-pointer min-w-0 w-full ${
                         isActive
                           ? 'bg-church-gold text-church-navy border-church-gold scale-[1.02] shadow-lg font-bold'
                           : 'bg-white/5 text-gray-200 border-white/10 hover:border-white/20 hover:bg-white/10'
@@ -287,15 +287,11 @@ export default function FesteSymbole() {
 
             {/* Right Panel: Beautiful Detail Reflection Board with high-contrast card */}
             <div className="lg:col-span-7">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={selectedSymbol}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.3 }}
-                  className="bg-white rounded-[40px] p-8 sm:p-12 shadow-2xl border border-church-border flex flex-col justify-between h-full relative overflow-hidden group text-left"
-                >
+            <div className="h-full flex flex-col justify-between">
+              <div
+                key={selectedSymbol}
+                className="bg-white rounded-[40px] p-8 sm:p-12 shadow-2xl border border-church-border flex flex-col justify-between h-full relative overflow-hidden group text-left"
+              >
                   {/* Backdrop glowing logo vector */}
                   <div className="absolute -top-12 -right-12 w-32 h-32 bg-church-gold/5 rounded-full blur-2xl pointer-events-none" />
 
@@ -335,8 +331,8 @@ export default function FesteSymbole() {
                     <span>Kirche • Symbole des Lebens</span>
                     <span>mehralsdudenkst</span>
                   </div>
-                </motion.div>
-              </AnimatePresence>
+              </div>
+            </div>
             </div>
           </motion.section>
         ) : (

@@ -88,7 +88,7 @@ export default function WasIstKatholisch() {
       <div className="relative w-full overflow-hidden bg-church-navy py-12 sm:py-20 text-center rounded-[40px] shadow-lg mb-12 select-none group border border-white/5">
         {/* Ambient photo background layer with premium Unsplash source (stained glass streaming light) */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-30 mix-blend-overlay scale-105 transition-all duration-1000 group-hover:scale-100" 
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-65 scale-105 transition-all duration-1000 group-hover:scale-100" 
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1548625361-155deee223d2?q=80&w=1200&auto=format&fit=crop")' }}
         />
         
@@ -138,24 +138,19 @@ export default function WasIstKatholisch() {
             Wähle die einzelnen Epochen auf der Zeitleiste aus, um tiefere Einblicke in deren theologische Relevanz und historische Entwicklung zu erhalten:
           </p>
 
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+          <div 
             className="space-y-4 pt-4 relative border-l-2 border-church-navy/10 pl-6 sm:pl-8 ml-3"
           >
             {steps.map((step, idx) => {
               const isActive = activeStep === idx;
               return (
-                <motion.div
-                  variants={cardVariants}
+                <div
                   key={idx}
                   onClick={() => setActiveStep(idx)}
-                  className={`cursor-pointer group relative transition-all duration-300 p-4 rounded-[24px] ${
+                  className={`cursor-pointer select-none touch-manipulation group relative transition-all duration-200 p-4 rounded-[24px] active:scale-[0.99] ${
                     isActive
-                      ? 'bg-church-navy text-white shadow-xl shadow-church-navy/10 scale-[1.02] border-l-4 border-church-gold'
-                      : 'hover:bg-church-bg/60 text-church-navy border border-transparent hover:border-church-border'
+                      ? 'bg-church-navy text-white shadow-xl shadow-church-navy/10 border-l-4 border-church-gold'
+                      : 'hover:bg-church-bg/60 text-church-navy border border-transparent hover:border-church-border bg-white'
                   }`}
                 >
                   {/* Timeline dot */}
@@ -178,10 +173,10 @@ export default function WasIstKatholisch() {
                   <p className={`text-xs sm:text-sm mt-1 leading-relaxed ${isActive ? 'text-gray-200 font-light' : 'text-gray-600'}`}>
                     {step.description}
                   </p>
-                </motion.div>
+                </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
 
         {/* Dynamic Detail Card side display */}
@@ -255,7 +250,7 @@ export default function WasIstKatholisch() {
       <section className="relative overflow-hidden rounded-[40px] shadow-xl border border-church-navy bg-church-navy text-white group select-none">
         {/* Dynamic background photo for the info banner */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-15 mix-blend-overlay scale-102 transition-all duration-700 group-hover:scale-100" 
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-45 scale-102 transition-all duration-700 group-hover:scale-100" 
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1512852964607-8cca57a833e1?q=80&w=1000&auto=format&fit=crop")' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-church-navy via-church-navy/95 to-transparent z-0" />

@@ -131,7 +131,7 @@ export default function KircheHilft() {
       {/* Cinematic Banner Header with Unsplash Backing */}
       <div className="relative w-full overflow-hidden bg-church-navy py-12 sm:py-20 text-center rounded-[40px] shadow-lg select-none group border border-white/5">
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-25 mix-blend-overlay scale-105 transition-all duration-1000 group-hover:scale-100" 
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-65 scale-105 transition-all duration-1000 group-hover:scale-100" 
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1200&auto=format&fit=crop")' }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#061524]/70 via-[#0E2942]/90 to-church-navy" />

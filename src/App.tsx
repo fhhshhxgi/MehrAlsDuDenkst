@@ -91,17 +91,9 @@ export default function App() {
       <div className="min-h-screen bg-church-bg text-church-text flex flex-col justify-between selection:bg-church-gold selection:text-church-navy pb-32">
       {/* Main Campaign content wrapper */}
       <main className="flex-1">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activePage}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.35, ease: 'easeInOut' }}
-          >
-            {renderContent()}
-          </motion.div>
-        </AnimatePresence>
+        <div>
+          {renderContent()}
+        </div>
       </main>
 
       {/* Interactive Floating Tour Progress HUD */}

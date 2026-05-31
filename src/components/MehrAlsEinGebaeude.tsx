@@ -118,7 +118,7 @@ export default function MehrAlsEinGebaeude() {
       <div className="relative w-full overflow-hidden bg-church-navy py-12 sm:py-20 text-center rounded-[40px] shadow-lg mb-12 select-none group border border-white/5">
         {/* Ambient photo background layer with premium Unsplash source */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center opacity-25 mix-blend-overlay scale-105 transition-all duration-1000 group-hover:scale-100" 
+          className="absolute inset-0 z-0 bg-cover bg-center opacity-65 scale-105 transition-all duration-1000 group-hover:scale-100" 
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1478147427282-58a87a120781?q=80&w=1200&auto=format&fit=crop")' }}
         />
         
@@ -220,7 +220,7 @@ export default function MehrAlsEinGebaeude() {
                   key={zone.id}
                   onClick={() => setSelectedZone(zone.id)}
                   style={{ left: `${zone.x}%`, top: `${zone.y}%` }}
-                  className="absolute -translate-x-1/2 -translate-y-1/2 focus:outline-none z-20 group cursor-pointer"
+                  className="absolute -translate-x-1/2 -translate-y-1/2 focus:outline-none z-20 group cursor-pointer touch-manipulation select-none"
                   title={zone.name}
                 >
                   <span className="relative flex h-10 w-10 items-center justify-center">
@@ -250,7 +250,7 @@ export default function MehrAlsEinGebaeude() {
                 id={`zone-pill-btn-${zone.id}`}
                 key={zone.id}
                 onClick={() => setSelectedZone(zone.id)}
-                className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all touch-manipulation select-none active:scale-95 ${
                   selectedZone === zone.id
                     ? 'bg-church-gold text-church-navy border-church-gold shadow-sm font-bold'
                     : 'bg-white/5 text-gray-300 border-white/10 hover:bg-white/10'
@@ -268,13 +268,9 @@ export default function MehrAlsEinGebaeude() {
             
             <div className="absolute top-0 right-0 w-44 h-44 bg-church-gold/15 rounded-full blur-[80px] pointer-events-none" />
             
-            <AnimatePresence mode="wait">
-              <motion.div
+            <div className="h-full flex flex-col justify-between">
+              <div
                 key={selectedZone}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
                 className="space-y-6 flex flex-col justify-between h-full"
               >
                 <div className="space-y-6 text-left">
@@ -304,11 +300,11 @@ export default function MehrAlsEinGebaeude() {
                     <span>Tippe auf ein anderes Symbol zum Erkunden</span>
                   </div>
                   <span className="bg-white/5 py-1 px-3 rounded text-white text-[10px] select-none">
-                    katholisch • mehr als du glaubst
+                    mehralsdudenkst
                   </span>
                 </div>
-              </motion.div>
-            </AnimatePresence>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -110,7 +110,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
     setActivePage(id);
     setIsMobileOpen(false);
     setActiveDropdown(null);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   const isGroupActive = (group: NavGroup) => {

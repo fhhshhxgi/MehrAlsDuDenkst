@@ -35,7 +35,7 @@ export default function Startseite({ setActivePage, onOpenLegal }: StartseitePro
 
   const handleQuestSelect = (page: PageId) => {
     setActivePage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0 });
   };
 
   return (
