@@ -18,7 +18,7 @@ import Mitmachen from './components/Mitmachen';
 import Kampagne from './components/Kampagne';
 import TourHUD from './components/TourHUD';
 import { Landmark, Compass, Heart, Info, HeartHandshake, Sparkles, Mail, X, Scale, ShieldAlert } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence, MotionConfig } from 'motion/react';
 
 export default function App() {
   const [activePage, setActivePage] = useState<PageId>('start');
@@ -87,7 +87,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-church-bg text-church-text flex flex-col justify-between selection:bg-church-gold selection:text-church-navy pb-32">
+    <MotionConfig reducedMotion="always">
+      <div className="min-h-screen bg-church-bg text-church-text flex flex-col justify-between selection:bg-church-gold selection:text-church-navy pb-32">
       {/* Main Campaign content wrapper */}
       <main className="flex-1">
         <AnimatePresence mode="wait">
@@ -269,6 +270,7 @@ export default function App() {
         )}
       </AnimatePresence>
     </div>
+    </MotionConfig>
   );
 }
 
