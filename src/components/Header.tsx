@@ -126,7 +126,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
         <div className="flex items-center justify-between h-20">
           
           {/* LOGO AREA */}
-          <div className="flex items-center space-x-3 cursor-pointer select-none shrink-0" onClick={() => handleNavClick('start')}>
+          <div className="flex items-center space-x-3 cursor-pointer select-none shrink-0 transition-transform active:scale-[0.98] duration-150" onClick={() => handleNavClick('start')}>
             <div className="bg-church-gold text-church-navy p-2.5 rounded-full hover:rotate-12 transition-transform duration-300 shadow-sm">
               <Landmark className="h-6 w-6" />
             </div>
@@ -147,7 +147,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
             <button
               id="nav-btn-start"
               onClick={() => handleNavClick('start')}
-              className={`px-4 py-2.5 text-sm font-semibold rounded-xl transition-all duration-200 relative ${
+              className={`px-4 py-2.5 text-sm font-semibold rounded-xl transition-all duration-150 active:scale-[0.98] relative ${
                 activePage === 'start'
                   ? 'text-church-gold bg-white/5'
                   : 'text-gray-200 hover:text-white hover:bg-white/5'
@@ -173,7 +173,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
                 >
                   <button
                     id={`nav-group-btn-${groupIdx}`}
-                    className={`px-4 py-2.5 text-sm font-semibold rounded-xl transition-all duration-200 inline-flex items-center space-x-1.5 focus:outline-none ${
+                    className={`px-4 py-2.5 text-sm font-semibold rounded-xl transition-all duration-150 active:scale-[0.98] inline-flex items-center space-x-1.5 focus:outline-none ${
                       hasActiveChild || isDropdownOpen
                         ? 'text-church-gold bg-white/5'
                         : 'text-gray-200 hover:text-white hover:bg-white/5'
@@ -207,7 +207,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
                             id={`subnav-btn-${subItem.id}`}
                             key={subItem.id}
                             onClick={() => handleNavClick(subItem.id)}
-                            className={`w-full text-left p-3 rounded-2xl flex flex-col transition-all duration-150 relative ${
+                            className={`w-full text-left p-3 rounded-2xl flex flex-col transition-all duration-150 active:scale-[0.98] relative ${
                               isSubActive
                                 ? 'bg-church-navy/5 text-church-navy ring-1 ring-church-gold/30'
                                 : 'hover:bg-church-bg text-church-navy'
@@ -254,7 +254,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
             <button
               id="mobile-menu-trigger"
               onClick={() => setIsMobileOpen(!isMobileOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none p-2 rounded-md hover:bg-white/5 transition-colors"
+              className="text-gray-300 hover:text-white focus:outline-none p-2 rounded-md hover:bg-white/5 active:scale-90 transition-all duration-150"
             >
               {isMobileOpen ? (
                 <X className="h-6 w-6 text-church-gold" />
@@ -275,7 +275,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
             <button
               id="mobile-nav-btn-start"
               onClick={() => handleNavClick('start')}
-              className={`w-full text-left px-4 py-3 rounded-2xl text-base font-bold transition-all ${
+              className={`w-full text-left px-4 py-3 rounded-2xl text-base font-bold transition-all duration-150 active:scale-[0.98] ${
                 activePage === 'start'
                   ? 'bg-church-gold text-church-navy'
                   : 'text-white border border-white/5 hover:bg-white/5'
@@ -299,7 +299,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
                         id={`mobile-subnav-btn-${subItem.id}`}
                         key={subItem.id}
                         onClick={() => handleNavClick(subItem.id)}
-                        className={`w-full text-left px-3 py-3 rounded-xl transition-all ${
+                        className={`w-full text-left px-3 py-3 rounded-xl transition-all duration-150 active:scale-[0.98] ${
                           isSubActive
                             ? 'bg-white/10 text-church-gold font-bold'
                             : 'text-gray-300 hover:text-white hover:bg-white/5'
@@ -318,7 +318,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
               <button
                 id="mobile-drawer-quiz-btn"
                 onClick={() => handleNavClick('mach-den-test')}
-                className="w-full bg-church-gold hover:bg-church-gold-hover text-church-navy font-bold py-3 px-4 rounded-2xl text-center text-sm shadow-md transition-all flex items-center justify-center space-x-2"
+                className="w-full bg-church-gold hover:bg-church-gold-hover text-church-navy font-bold py-3 px-4 rounded-2xl text-center text-sm shadow-md transition-all active:scale-[0.98] duration-150 flex items-center justify-center space-x-2"
               >
                 <CompassIcon className="h-4 w-4" />
                 <span>Selbsttest starten</span>
@@ -327,7 +327,7 @@ export default function Header({ activePage, setActivePage }: HeaderProps) {
               <button
                 id="mobile-drawer-critique-btn"
                 onClick={() => handleNavClick('kritische-fragen')}
-                className="w-full bg-white/5 hover:bg-white/10 text-gray-200 border border-white/10 py-3 px-4 rounded-2xl text-center text-sm transition-all flex items-center justify-center space-x-2"
+                className="w-full bg-white/5 hover:bg-white/10 text-gray-200 border border-white/10 py-3 px-4 rounded-2xl text-center text-sm transition-all active:scale-[0.98] duration-150 flex items-center justify-center space-x-2"
               >
                 <HelpCircle className="h-4 w-4" />
                 <span>Kritische Fragen stellen</span>

@@ -188,7 +188,7 @@ export default function TourHUD({
                     width: '24px',
                     height: '24px'
                   }}
-                  className="z-10 flex items-center justify-center cursor-pointer outline-none focus:ring-0 group bg-transparent border-none p-0 shrink-0"
+                  className="z-10 flex items-center justify-center cursor-pointer outline-none focus:ring-0 group bg-transparent border-none p-0 shrink-0 select-none touch-manipulation active:scale-[0.82] transition-transform duration-100"
                   title={`${idx + 1}. ${step.title}: ${step.subtitle}`}
                 >
                   {/* Glowing Premium Dot Pin */}
@@ -219,7 +219,7 @@ export default function TourHUD({
             <button
               id="tour-reset-btn"
               onClick={onResetTour}
-              className="p-2 bg-white/5 hover:bg-neutral-800 text-gray-400 hover:text-white rounded-full transition-all cursor-pointer border border-white/5"
+              className="p-2 bg-white/5 hover:bg-neutral-800 text-gray-400 hover:text-white rounded-full transition-all duration-100 active:scale-95 cursor-pointer border border-white/5 select-none touch-manipulation"
               title="Reise zurücksetzen"
             >
               <RotateCcw className="h-4 w-4" />
@@ -230,9 +230,9 @@ export default function TourHUD({
               id="tour-prev-step-btn"
               onClick={handlePrevStep}
               disabled={!prevStep}
-              className={`p-2 rounded-full border transition-all cursor-pointer ${
+              className={`p-2 rounded-full border transition-all duration-100 select-none touch-manipulation cursor-pointer ${
                 prevStep 
-                  ? 'bg-white/5 border-white/10 text-white hover:bg-white/10' 
+                  ? 'bg-white/5 border-white/10 text-white hover:bg-white/10 active:scale-95' 
                   : 'bg-transparent border-transparent text-gray-600 cursor-not-allowed'
               }`}
               title="Vorherige Station"
@@ -245,7 +245,7 @@ export default function TourHUD({
               <button
                 id="tour-next-step-btn"
                 onClick={handleNextStep}
-                className="px-4 py-2 bg-church-gold hover:bg-church-gold-hover text-church-navy text-xs font-black rounded-full transition-all flex items-center gap-1.5 cursor-pointer shadow-lg shadow-church-gold/15"
+                className="px-4 py-2 bg-church-gold hover:bg-church-gold-hover text-church-navy text-xs font-black rounded-full transition-all duration-100 active:scale-95 flex items-center gap-1.5 cursor-pointer shadow-lg shadow-church-gold/15 select-none touch-manipulation"
               >
                 <span>Weiter</span>
                 <ChevronRight className="h-4 w-4 shrink-0" />
